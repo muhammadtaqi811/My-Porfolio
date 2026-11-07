@@ -1,0 +1,571 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Muhammad Taqi Abbas — Biomedical Engineer &amp; AI Researcher</title>
+<meta name="description" content="Portfolio of Muhammad Taqi Abbas, biomedical engineer working on AI for biomedical signals, medical imaging and assistive technology.">
+<meta property="og:title" content="Muhammad Taqi Abbas — Biomedical Engineer &amp; AI Researcher">
+<meta property="og:description" content="AI for biomedical signals, medical imaging and assistive robotics.">
+<meta property="og:image" content="assets/img/portrait.jpg">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%23070B14'/%3E%3Cpath d='M3 17h7l2-5 3 10 3-14 2 9h9' fill='none' stroke='%2322D3EE' stroke-width='2.4' stroke-linejoin='round' stroke-linecap='round'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&amp;family=Inter:wght@400;500;600&amp;family=JetBrains+Mono:wght@400;500&amp;display=swap">
+<style>
+body{margin:0;background:#070B14;color:#E6EDF7;font-family:'Inter',system-ui,sans-serif;-webkit-font-smoothing:antialiased}
+html{scroll-behavior:smooth}
+a{color:#67E8F9}a:hover{color:#A5F3FC}
+.grid-dark{background-image:linear-gradient(rgba(103,232,249,0.05) 1px,transparent 1px),linear-gradient(90deg,rgba(103,232,249,0.05) 1px,transparent 1px);background-size:44px 44px}
+.trace{animation:trace-scroll 7s linear infinite}
+@keyframes trace-scroll{from{transform:translateX(0)}to{transform:translateX(-50%)}}
+.scroll260{animation:sx260 3s linear infinite}
+@keyframes sx260{from{transform:translateX(0)}to{transform:translateX(-260px)}}
+.flow{stroke-dasharray:6 8;animation:dashflow 1s linear infinite}
+@keyframes dashflow{from{stroke-dashoffset:0}to{stroke-dashoffset:-28}}
+.spin{transform-box:fill-box;transform-origin:center;animation:spin 6s linear infinite}
+@keyframes spin{from{transform:rotate(0deg)}to{transform:rotate(360deg)}}
+.pulse{animation:pulse 1.6s ease-in-out infinite}.d2{animation-delay:.4s}.d3{animation-delay:.8s}.d4{animation-delay:1.2s}
+@keyframes pulse{0%,100%{opacity:1}50%{opacity:.3}}
+.sweep{stroke-dasharray:150 300;animation:sweep 2.2s linear infinite}
+@keyframes sweep{from{stroke-dashoffset:450}to{stroke-dashoffset:0}}
+.blink{animation:blink 1s steps(1) infinite}
+@keyframes blink{50%{opacity:0}}
+.grow{stroke-dasharray:100;animation:grow 2.6s ease-out infinite}
+@keyframes grow{0%{stroke-dashoffset:100}55%,100%{stroke-dashoffset:0}}
+.beat{animation:beat 1.1s ease-in-out infinite}
+@keyframes beat{0%,100%{transform:scale(1)}15%{transform:scale(1.35)}30%{transform:scale(1)}}
+.hv{transition:border-color .25s ease,box-shadow .25s ease,transform .25s ease,background-color .25s ease}
+.hv:hover{transform:translateY(-4px)}
+.hv-cyan:hover{border-color:#22D3EE !important;box-shadow:0 18px 44px -18px rgba(34,211,238,.55)}
+.hv-green:hover{border-color:#34D399 !important;box-shadow:0 18px 44px -18px rgba(52,211,153,.55)}
+.hv-amber:hover{border-color:#FBBF24 !important;box-shadow:0 18px 44px -18px rgba(251,191,36,.5)}
+.hv-violet:hover{border-color:#A78BFA !important;box-shadow:0 18px 44px -18px rgba(167,139,250,.55)}
+.hv-pink:hover{border-color:#F472B6 !important;box-shadow:0 18px 44px -18px rgba(244,114,182,.5)}
+.hv-flat:hover{transform:none}
+.zoom img{transition:transform .5s ease}.zoom:hover img{transform:scale(1.05)}
+.nav-link{transition:color .2s ease}.nav-link:hover{color:#67E8F9 !important}
+.btn-primary{transition:transform .2s ease,box-shadow .2s ease,filter .2s ease}
+.btn-primary:hover{transform:translateY(-2px);filter:brightness(1.12);box-shadow:0 12px 30px -10px rgba(34,211,238,.7)}
+.btn-ghost{transition:all .2s ease}
+.btn-ghost:hover{border-color:#22D3EE !important;color:#67E8F9 !important;background-color:rgba(34,211,238,.08) !important;transform:translateY(-2px)}
+.tag{transition:all .2s ease}.tag:hover{border-color:#22D3EE !important;color:#67E8F9 !important;background-color:rgba(34,211,238,.1) !important}
+.row-link{transition:all .2s ease}.row-link:hover{border-color:#22D3EE !important;background-color:#122036 !important;transform:translateX(4px)}
+input,textarea{font:inherit}
+input:focus,textarea:focus,button:focus-visible,a:focus-visible{outline:2px solid #67E8F9;outline-offset:2px}
+
+*{box-sizing:border-box}
+[hidden]{display:none !important}
+</style>
+</head>
+<body>
+<div style="width: 100%; min-height: 100vh; display: flex; flex-direction: column">
+
+<!-- NAV -->
+<header style="position: sticky; top: 0; z-index: 20; background: rgba(7,11,20,0.92); border-bottom: 1px solid #1C2740">
+<nav aria-label="Main" style="max-width: 1200px; margin: 0 auto; padding: 10px 24px; display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 6px 24px">
+<a href="#top" style="min-height: 44px; display: flex; align-items: center; text-decoration: none; color: #E6EDF7; font-family: 'Space Grotesk', sans-serif; font-weight: 700; font-size: 24px; letter-spacing: -0.02em">MTA<span style="color: #22D3EE">.</span></a>
+<div style="display: flex; flex-wrap: wrap; gap: 0 20px; font-size: 15px; font-weight: 500">
+<a href="#about" class="nav-link" style="color: #C3CEDF; text-decoration: none; padding: 12px 0">About</a>
+<a href="#skills" class="nav-link" style="color: #C3CEDF; text-decoration: none; padding: 12px 0">Skills</a>
+<a href="#experience" class="nav-link" style="color: #C3CEDF; text-decoration: none; padding: 12px 0">Experience</a>
+<a href="#portfolio" class="nav-link" style="color: #C3CEDF; text-decoration: none; padding: 12px 0">Portfolio</a>
+<a href="#publications" class="nav-link" style="color: #C3CEDF; text-decoration: none; padding: 12px 0">Publications</a>
+<a href="#gallery" class="nav-link" style="color: #C3CEDF; text-decoration: none; padding: 12px 0">Gallery</a>
+<a href="#contact" class="nav-link" style="color: #C3CEDF; text-decoration: none; padding: 12px 0">Contact</a>
+</div>
+</nav>
+</header>
+
+<!-- HERO -->
+<section id="top" class="grid-dark" style="border-bottom: 1px solid #1C2740">
+<div style="max-width: 1200px; margin: 0 auto; padding: 88px 24px 0; display: flex; flex-wrap: wrap; align-items: center; gap: 56px">
+<div style="flex: 999 1 520px; min-width: 0; display: flex; flex-direction: column; gap: 22px">
+<p style="margin: 0; font-family: 'JetBrains Mono', monospace; font-size: 14px; color: #22D3EE">&gt; Welcome to my portfolio</p>
+<h1 style="margin: 0; font-family: 'Space Grotesk', sans-serif; font-weight: 700; font-size: clamp(44px, 6.2vw, 80px); line-height: 1.0; letter-spacing: -0.035em">Muhammad Taqi Abbas</h1>
+<p style="margin: 0; font-family: 'Space Grotesk', sans-serif; font-weight: 500; font-size: clamp(20px, 2.2vw, 26px); line-height: 1.35; color: #C3CEDF">Biomedical Engineer &amp; AI Researcher<br><span style="color: #9AA8BF">Signal Processing · Medical Imaging · Assistive Robotics</span></p>
+<p style="margin: 0; max-width: 600px; font-size: 19px; line-height: 1.65; color: #B4C0D3">I engineer the bridge between the human body and intelligent machines, teaching computers to read the language of muscle and heart, and turning it into technology that gives people back their independence.</p>
+<div style="display: flex; flex-wrap: wrap; gap: 12px; padding-top: 6px">
+<a href="#portfolio" class="btn-primary" style="display: inline-flex; align-items: center; min-height: 50px; padding: 0 26px; border-radius: 12px; background: #22D3EE; color: #04121A; text-decoration: none; font-weight: 600; font-size: 16px">Explore My Work</a>
+<a href="assets/docs/Muhammad_Taqi_Abbas_CV.pdf" download="Muhammad_Taqi_Abbas_CV.pdf" class="btn-ghost" style="display: inline-flex; align-items: center; gap: 10px; min-height: 50px; padding: 0 26px; border-radius: 12px; border: 1px solid #2A3A57; color: #E6EDF7; text-decoration: none; font-weight: 600; font-size: 16px"><svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v12"></path><path d="M7 10l5 5 5-5"></path><path d="M5 21h14"></path></svg>Download CV</a>
+</div>
+</div>
+<figure style="flex: 1 1 320px; max-width: 400px; margin: 0 auto; position: relative">
+<img src="assets/img/portrait.jpg" alt="Muhammad Taqi Abbas in a dark suit" style="display: block; width: 100%; aspect-ratio: 535 / 720; object-fit: cover; object-position: top; border-radius: 28px; border: 1px solid #2A4A6B; box-shadow: 0 0 0 6px #0B1220, 0 30px 80px -20px rgba(34,211,238,0.35)">
+<figcaption style="position: absolute; left: 16px; right: 16px; bottom: 16px; display: flex; align-items: center; gap: 10px; padding: 12px 16px; border-radius: 14px; background: rgba(7,11,20,0.82); border: 1px solid #2A3A57; font-size: 14px; color: #E6EDF7">
+<span aria-hidden="true" class="beat" style="width: 9px; height: 9px; border-radius: 50%; background: #34D399; box-shadow: 0 0 10px #34D399"></span>
+Biomedical Engineer · Shalamar Hospital, Lahore
+</figcaption>
+</figure>
+</div>
+
+<!-- BIO-SIGNAL SIMULATOR -->
+<div style="max-width: 1200px; margin: 0 auto; padding: 64px 24px 96px">
+<button type="button" id="sim" class="hv hv-cyan hv-flat" aria-label="Bio-signal simulator, showing ECG. Click to switch signal." style="all: unset; cursor: pointer; display: flex; flex-wrap: wrap; align-items: stretch; gap: 20px 28px; box-sizing: border-box; width: 100%; background: #0B1220; border: 1px solid #1F2D47; border-radius: 20px; padding: 22px">
+<span style="flex: 1 1 240px; display: flex; flex-direction: column; justify-content: space-between; gap: 14px">
+<span style="display: flex; align-items: center; gap: 10px; font-family: 'JetBrains Mono', monospace; font-size: 13px; color: #9AA8BF"><span aria-hidden="true" id="sim-dot" class="beat" style="width: 9px; height: 9px; border-radius: 50%; background: #34D399; box-shadow: 0 0 10px #34D399"></span>BIO-SIGNAL SIMULATOR</span>
+<span style="display: flex; flex-direction: column; gap: 6px"><span id="sim-name" style="font-family: 'Space Grotesk', sans-serif; font-weight: 700; font-size: 30px; color: #34D399">ECG</span><span id="sim-desc" style="font-size: 15px; line-height: 1.5; color: #C3CEDF">Electrocardiogram: the electrical rhythm of the heart.</span></span>
+<span style="font-family: 'JetBrains Mono', monospace; font-size: 12px; color: #7F8DA6">Click to switch signal →</span>
+</span>
+<span class="grid-dark" style="flex: 999 1 520px; display: block; position: relative; min-height: 170px; border-radius: 12px; background-color: #060A12; border: 1px solid #16213A; overflow: hidden">
+<svg class="trace" data-mode="ecg" aria-hidden="true" viewBox="0 0 2400 160" preserveAspectRatio="none" style="position: absolute; left: 0; top: 5px; width: 200%; height: 160px"><path d="M0 80 L60 80 L70 72 L80 80 L95 80 L100 88 L108 14 L116 124 L122 80 L140 80 L158 64 L176 80 L200 80 L260 80 L270 72 L280 80 L295 80 L300 88 L308 14 L316 124 L322 80 L340 80 L358 64 L376 80 L400 80 L460 80 L470 72 L480 80 L495 80 L500 88 L508 14 L516 124 L522 80 L540 80 L558 64 L576 80 L600 80 L660 80 L670 72 L680 80 L695 80 L700 88 L708 14 L716 124 L722 80 L740 80 L758 64 L776 80 L800 80 L860 80 L870 72 L880 80 L895 80 L900 88 L908 14 L916 124 L922 80 L940 80 L958 64 L976 80 L1000 80 L1060 80 L1070 72 L1080 80 L1095 80 L1100 88 L1108 14 L1116 124 L1122 80 L1140 80 L1158 64 L1176 80 L1200 80 L1260 80 L1270 72 L1280 80 L1295 80 L1300 88 L1308 14 L1316 124 L1322 80 L1340 80 L1358 64 L1376 80 L1400 80 L1460 80 L1470 72 L1480 80 L1495 80 L1500 88 L1508 14 L1516 124 L1522 80 L1540 80 L1558 64 L1576 80 L1600 80 L1660 80 L1670 72 L1680 80 L1695 80 L1700 88 L1708 14 L1716 124 L1722 80 L1740 80 L1758 64 L1776 80 L1800 80 L1860 80 L1870 72 L1880 80 L1895 80 L1900 88 L1908 14 L1916 124 L1922 80 L1940 80 L1958 64 L1976 80 L2000 80 L2060 80 L2070 72 L2080 80 L2095 80 L2100 88 L2108 14 L2116 124 L2122 80 L2140 80 L2158 64 L2176 80 L2200 80 L2260 80 L2270 72 L2280 80 L2295 80 L2300 88 L2308 14 L2316 124 L2322 80 L2340 80 L2358 64 L2376 80 L2400 80" fill="none" stroke="#34D399" stroke-width="2.4" stroke-linejoin="round" vector-effect="non-scaling-stroke"></path></svg>
+<svg class="trace" data-mode="emg" hidden aria-hidden="true" viewBox="0 0 2400 160" preserveAspectRatio="none" style="position: absolute; left: 0; top: 5px; width: 200%; height: 160px"><path d="M0 80 L4 78 L8 77 L12 79 L16 77 L20 77 L24 79 L28 83 L32 82 L36 82 L40 78 L44 80 L48 78 L52 77 L56 77 L60 78 L64 83 L68 83 L72 82 L76 82 L80 78 L84 78 L88 81 L92 83 L96 89 L100 94 L104 60 L108 86 L112 92 L116 80 L120 52 L124 77 L128 38 L132 127 L136 121 L140 86 L144 56 L148 129 L152 89 L156 125 L160 120 L164 81 L168 71 L172 90 L176 73 L180 50 L184 65 L188 102 L192 53 L196 58 L200 85 L204 74 L208 80 L212 80 L216 79 L220 84 L224 78 L228 79 L232 78 L236 81 L240 78 L244 79 L248 82 L252 79 L256 80 L260 83 L264 77 L268 76 L272 78 L276 82 L280 81 L284 78 L288 79 L292 77 L296 80 L300 76 L304 82 L308 83 L312 84 L316 82 L320 84 L324 76 L328 78 L332 84 L336 82 L340 79 L344 84 L348 81 L352 83 L356 78 L360 78 L364 80 L368 77 L372 79 L376 84 L380 79 L384 76 L388 76 L392 75 L396 87 L400 75 L404 70 L408 56 L412 113 L416 74 L420 55 L424 38 L428 35 L432 44 L436 100 L440 39 L444 26 L448 79 L452 50 L456 139 L460 36 L464 83 L468 110 L472 71 L476 126 L480 78 L484 60 L488 74 L492 53 L496 76 L500 71 L504 90 L508 85 L512 80 L516 76 L520 78 L524 78 L528 78 L532 78 L536 83 L540 77 L544 76 L548 83 L552 81 L556 84 L560 79 L564 83 L568 81 L572 82 L576 82 L580 80 L584 77 L588 78 L592 83 L596 83 L600 83 L604 79 L608 81 L612 82 L616 81 L620 83 L624 80 L628 81 L632 81 L636 78 L640 83 L644 84 L648 77 L652 84 L656 84 L660 81 L664 76 L668 83 L672 77 L676 84 L680 81 L684 76 L688 77 L692 82 L696 82 L700 89 L704 101 L708 63 L712 46 L716 113 L720 38 L724 116 L728 41 L732 113 L736 112 L740 124 L744 86 L748 125 L752 44 L756 100 L760 60 L764 124 L768 109 L772 77 L776 83 L780 39 L784 43 L788 87 L792 79 L796 98 L800 84 L804 71 L808 78 L812 82 L816 80 L820 76 L824 83 L828 83 L832 77 L836 80 L840 79 L844 82 L848 78 L852 78 L856 80 L860 84 L864 77 L868 77 L872 81 L876 83 L880 80 L884 79 L888 83 L892 82 L896 77 L900 83 L904 78 L908 78 L912 83 L916 79 L920 82 L924 77 L928 83 L932 77 L936 77 L940 80 L944 79 L948 80 L952 83 L956 82 L960 76 L964 78 L968 80 L972 80 L976 82 L980 80 L984 77 L988 78 L992 85 L996 76 L1000 90 L1004 103 L1008 87 L1012 92 L1016 89 L1020 64 L1024 119 L1028 77 L1032 124 L1036 58 L1040 123 L1044 114 L1048 94 L1052 73 L1056 37 L1060 111 L1064 64 L1068 97 L1072 43 L1076 40 L1080 49 L1084 104 L1088 58 L1092 104 L1096 74 L1100 83 L1104 76 L1108 82 L1112 77 L1116 79 L1120 83 L1124 77 L1128 81 L1132 79 L1136 78 L1140 76 L1144 76 L1148 84 L1152 83 L1156 82 L1160 82 L1164 84 L1168 77 L1172 81 L1176 80 L1180 81 L1184 84 L1188 82 L1192 84 L1196 77 L1200 81 L1204 81 L1208 82 L1212 81 L1216 83 L1220 78 L1224 83 L1228 79 L1232 81 L1236 83 L1240 82 L1244 78 L1248 78 L1252 79 L1256 81 L1260 84 L1264 83 L1268 79 L1272 79 L1276 83 L1280 78 L1284 79 L1288 76 L1292 76 L1296 81 L1300 87 L1304 86 L1308 72 L1312 111 L1316 90 L1320 50 L1324 39 L1328 128 L1332 133 L1336 127 L1340 92 L1344 58 L1348 31 L1352 51 L1356 47 L1360 130 L1364 124 L1368 110 L1372 44 L1376 55 L1380 62 L1384 115 L1388 57 L1392 97 L1396 89 L1400 82 L1404 92 L1408 77 L1412 80 L1416 77 L1420 77 L1424 76 L1428 79 L1432 77 L1436 76 L1440 84 L1444 78 L1448 83 L1452 82 L1456 82 L1460 81 L1464 84 L1468 83 L1472 82 L1476 80 L1480 82 L1484 82 L1488 80 L1492 80 L1496 77 L1500 83 L1504 80 L1508 77 L1512 77 L1516 83 L1520 78 L1524 79 L1528 81 L1532 83 L1536 79 L1540 79 L1544 79 L1548 76 L1552 83 L1556 76 L1560 84 L1564 77 L1568 77 L1572 83 L1576 83 L1580 78 L1584 80 L1588 80 L1592 83 L1596 72 L1600 92 L1604 104 L1608 92 L1612 109 L1616 114 L1620 69 L1624 113 L1628 114 L1632 89 L1636 36 L1640 94 L1644 129 L1648 57 L1652 98 L1656 127 L1660 92 L1664 28 L1668 94 L1672 55 L1676 114 L1680 94 L1684 65 L1688 107 L1692 87 L1696 72 L1700 92 L1704 90 L1708 85 L1712 83 L1716 81 L1720 82 L1724 81 L1728 80 L1732 84 L1736 79 L1740 77 L1744 82 L1748 80 L1752 80 L1756 81 L1760 78 L1764 78 L1768 77 L1772 82 L1776 83 L1780 82 L1784 77 L1788 84 L1792 83 L1796 80 L1800 76 L1804 83 L1808 81 L1812 81 L1816 76 L1820 82 L1824 76 L1828 80 L1832 77 L1836 79 L1840 83 L1844 82 L1848 83 L1852 78 L1856 79 L1860 81 L1864 76 L1868 79 L1872 84 L1876 82 L1880 83 L1884 78 L1888 82 L1892 84 L1896 85 L1900 78 L1904 64 L1908 52 L1912 107 L1916 114 L1920 60 L1924 104 L1928 71 L1932 94 L1936 118 L1940 59 L1944 94 L1948 51 L1952 81 L1956 24 L1960 53 L1964 56 L1968 125 L1972 43 L1976 105 L1980 44 L1984 118 L1988 57 L1992 56 L1996 66 L2000 96 L2004 84 L2008 85 L2012 80 L2016 77 L2020 79 L2024 80 L2028 84 L2032 77 L2036 78 L2040 83 L2044 77 L2048 84 L2052 78 L2056 81 L2060 81 L2064 83 L2068 77 L2072 83 L2076 77 L2080 82 L2084 76 L2088 82 L2092 77 L2096 78 L2100 76 L2104 79 L2108 79 L2112 84 L2116 81 L2120 79 L2124 84 L2128 77 L2132 78 L2136 84 L2140 84 L2144 81 L2148 84 L2152 76 L2156 83 L2160 82 L2164 81 L2168 83 L2172 77 L2176 78 L2180 77 L2184 80 L2188 80 L2192 81 L2196 76 L2200 89 L2204 96 L2208 95 L2212 48 L2216 53 L2220 56 L2224 55 L2228 88 L2232 47 L2236 94 L2240 62 L2244 64 L2248 105 L2252 133 L2256 43 L2260 62 L2264 134 L2268 49 L2272 32 L2276 51 L2280 108 L2284 98 L2288 110 L2292 80 L2296 58 L2300 73 L2304 86 L2308 79 L2312 77 L2316 79 L2320 80 L2324 79 L2328 80 L2332 77 L2336 76 L2340 82 L2344 82 L2348 79 L2352 77 L2356 78 L2360 80 L2364 83 L2368 80 L2372 84 L2376 80 L2380 77 L2384 81 L2388 81 L2392 81 L2396 82 L2400 76" fill="none" stroke="#22D3EE" stroke-width="1.6" stroke-linejoin="round" vector-effect="non-scaling-stroke"></path></svg>
+<svg class="trace" data-mode="eeg" hidden aria-hidden="true" viewBox="0 0 2400 160" preserveAspectRatio="none" style="position: absolute; left: 0; top: 5px; width: 200%; height: 160px"><path d="M0 96 L4 97 L8 93 L12 90 L16 92 L20 82 L24 76 L28 77 L32 74 L36 82 L40 81 L44 69 L48 69 L52 82 L56 86 L60 93 L64 97 L68 88 L72 79 L76 75 L80 61 L84 44 L88 55 L92 65 L96 79 L100 92 L104 89 L108 84 L112 86 L116 87 L120 79 L124 77 L128 78 L132 75 L136 81 L140 77 L144 68 L148 74 L152 89 L156 98 L160 104 L164 101 L168 93 L172 87 L176 78 L180 64 L184 59 L188 69 L192 77 L196 84 L200 91 L204 79 L208 78 L212 85 L216 79 L220 76 L224 74 L228 76 L232 75 L236 75 L240 71 L244 64 L248 76 L252 86 L256 91 L260 93 L264 93 L268 88 L272 84 L276 80 L280 68 L284 73 L288 79 L292 86 L296 89 L300 86 L304 81 L308 84 L312 85 L316 84 L320 80 L324 79 L328 76 L332 77 L336 70 L340 63 L344 64 L348 78 L352 82 L356 88 L360 90 L364 87 L368 82 L372 80 L376 69 L380 63 L384 68 L388 80 L392 85 L396 85 L400 82 L404 80 L408 88 L412 96 L416 92 L420 89 L424 87 L428 82 L432 77 L436 69 L440 61 L444 67 L448 86 L452 96 L456 98 L460 94 L464 88 L468 81 L472 77 L476 62 L480 54 L484 65 L488 71 L492 75 L496 73 L500 68 L504 71 L508 87 L512 94 L516 87 L520 88 L524 85 L528 76 L532 71 L536 60 L540 61 L544 77 L548 94 L552 100 L556 101 L560 98 L564 88 L568 89 L572 84 L576 70 L580 70 L584 76 L588 76 L592 75 L596 72 L600 72 L604 75 L608 86 L612 91 L616 84 L620 82 L624 79 L628 69 L632 67 L636 64 L640 66 L644 79 L648 86 L652 88 L656 87 L660 88 L664 84 L668 86 L672 81 L676 75 L680 81 L684 86 L688 82 L692 80 L696 78 L700 78 L704 84 L708 92 L712 89 L716 85 L720 83 L724 78 L728 71 L732 69 L736 66 L740 68 L744 83 L748 87 L752 85 L756 82 L760 79 L764 79 L768 80 L772 75 L776 74 L780 80 L784 81 L788 73 L792 71 L796 73 L800 76 L804 95 L808 105 L812 99 L816 97 L820 93 L824 79 L828 73 L832 65 L836 64 L840 79 L844 91 L848 89 L852 87 L856 87 L860 81 L864 82 L868 83 L872 77 L876 73 L880 74 L884 70 L888 59 L892 56 L896 59 L900 75 L904 94 L908 98 L912 95 L916 93 L920 86 L924 76 L928 67 L932 65 L936 69 L940 83 L944 93 L948 87 L952 85 L956 90 L960 89 L964 94 L968 91 L972 86 L976 82 L980 82 L984 71 L988 63 L992 62 L996 71 L1000 82 L1004 94 L1008 91 L1012 82 L1016 84 L1020 76 L1024 67 L1028 68 L1032 64 L1036 70 L1040 82 L1044 82 L1048 76 L1052 79 L1056 83 L1060 87 L1064 88 L1068 89 L1072 83 L1076 83 L1080 83 L1084 73 L1088 71 L1092 75 L1096 82 L1100 89 L1104 94 L1108 89 L1112 86 L1116 87 L1120 79 L1124 74 L1128 72 L1132 73 L1136 76 L1140 82 L1144 77 L1148 70 L1152 76 L1156 82 L1160 86 L1164 87 L1168 83 L1172 80 L1176 78 L1180 72 L1184 60 L1188 64 L1192 73 L1196 84 L1200 95 L1204 97 L1208 93 L1212 90 L1216 92 L1220 82 L1224 76 L1228 77 L1232 74 L1236 82 L1240 81 L1244 69 L1248 69 L1252 82 L1256 86 L1260 93 L1264 97 L1268 88 L1272 79 L1276 75 L1280 61 L1284 44 L1288 55 L1292 65 L1296 79 L1300 92 L1304 89 L1308 84 L1312 86 L1316 87 L1320 79 L1324 77 L1328 78 L1332 75 L1336 81 L1340 77 L1344 68 L1348 74 L1352 89 L1356 98 L1360 104 L1364 101 L1368 93 L1372 87 L1376 78 L1380 64 L1384 59 L1388 69 L1392 77 L1396 84 L1400 91 L1404 79 L1408 78 L1412 85 L1416 79 L1420 76 L1424 74 L1428 76 L1432 75 L1436 75 L1440 71 L1444 64 L1448 76 L1452 86 L1456 91 L1460 93 L1464 93 L1468 88 L1472 84 L1476 80 L1480 68 L1484 73 L1488 79 L1492 86 L1496 89 L1500 86 L1504 81 L1508 84 L1512 85 L1516 84 L1520 80 L1524 79 L1528 76 L1532 77 L1536 70 L1540 63 L1544 64 L1548 78 L1552 82 L1556 88 L1560 90 L1564 87 L1568 82 L1572 80 L1576 69 L1580 63 L1584 68 L1588 80 L1592 85 L1596 85 L1600 82 L1604 80 L1608 88 L1612 96 L1616 92 L1620 89 L1624 87 L1628 82 L1632 77 L1636 69 L1640 61 L1644 67 L1648 86 L1652 96 L1656 98 L1660 94 L1664 88 L1668 81 L1672 77 L1676 62 L1680 54 L1684 65 L1688 71 L1692 75 L1696 73 L1700 68 L1704 71 L1708 87 L1712 94 L1716 87 L1720 88 L1724 85 L1728 76 L1732 71 L1736 60 L1740 61 L1744 77 L1748 94 L1752 100 L1756 101 L1760 98 L1764 88 L1768 89 L1772 84 L1776 70 L1780 70 L1784 76 L1788 76 L1792 75 L1796 72 L1800 72 L1804 75 L1808 86 L1812 91 L1816 84 L1820 82 L1824 79 L1828 69 L1832 67 L1836 64 L1840 66 L1844 79 L1848 86 L1852 88 L1856 87 L1860 88 L1864 84 L1868 86 L1872 81 L1876 75 L1880 81 L1884 86 L1888 82 L1892 80 L1896 78 L1900 78 L1904 84 L1908 92 L1912 89 L1916 85 L1920 83 L1924 78 L1928 71 L1932 69 L1936 66 L1940 68 L1944 83 L1948 87 L1952 85 L1956 82 L1960 79 L1964 79 L1968 80 L1972 75 L1976 74 L1980 80 L1984 81 L1988 73 L1992 71 L1996 73 L2000 76 L2004 95 L2008 105 L2012 99 L2016 97 L2020 93 L2024 79 L2028 73 L2032 65 L2036 64 L2040 79 L2044 91 L2048 89 L2052 87 L2056 87 L2060 81 L2064 82 L2068 83 L2072 77 L2076 73 L2080 74 L2084 70 L2088 59 L2092 56 L2096 59 L2100 75 L2104 94 L2108 98 L2112 95 L2116 93 L2120 86 L2124 76 L2128 67 L2132 65 L2136 69 L2140 83 L2144 93 L2148 87 L2152 85 L2156 90 L2160 89 L2164 94 L2168 91 L2172 86 L2176 82 L2180 82 L2184 71 L2188 63 L2192 62 L2196 71 L2200 82 L2204 94 L2208 91 L2212 82 L2216 84 L2220 76 L2224 67 L2228 68 L2232 64 L2236 70 L2240 82 L2244 82 L2248 76 L2252 79 L2256 83 L2260 87 L2264 88 L2268 89 L2272 83 L2276 83 L2280 83 L2284 73 L2288 71 L2292 75 L2296 82 L2300 89 L2304 94 L2308 89 L2312 86 L2316 87 L2320 79 L2324 74 L2328 72 L2332 73 L2336 76 L2340 82 L2344 77 L2348 70 L2352 76 L2356 82 L2360 86 L2364 87 L2368 83 L2372 80 L2376 78 L2380 72 L2384 60 L2388 64 L2392 73 L2396 84 L2400 95" fill="none" stroke="#A78BFA" stroke-width="1.6" stroke-linejoin="round" vector-effect="non-scaling-stroke"></path></svg>
+</span>
+</button>
+</div>
+</section>
+
+<!-- ABOUT -->
+<section id="about" style="background: #070B14">
+<div style="max-width: 1200px; margin: 0 auto; padding: 104px 24px; display: flex; flex-direction: column; gap: 36px">
+<div style="display: flex; flex-direction: column; gap: 10px">
+<p style="margin: 0; font-family: 'JetBrains Mono', monospace; font-size: 14px; color: #22D3EE">// 01 · ABOUT ME</p>
+<h2 style="margin: 0; font-family: 'Space Grotesk', sans-serif; font-weight: 700; font-size: clamp(32px, 3.8vw, 50px); line-height: 1.08; letter-spacing: -0.02em">Where physiology meets intelligence.</h2>
+</div>
+<div style="display: flex; flex-wrap: wrap; gap: 20px">
+<div class="hv hv-cyan" style="flex: 1 1 440px; min-width: 0; background: #0F1626; border: 1px solid #1C2740; border-radius: 18px; padding: 32px; display: flex; flex-direction: column; gap: 14px">
+<h3 style="margin: 0; font-family: 'Space Grotesk', sans-serif; font-weight: 600; font-size: 22px">Professional Summary</h3>
+<p style="margin: 0; font-size: 16px; line-height: 1.8; color: #B4C0D3">I am a biomedical engineer driven by one conviction: that every heartbeat and every muscle twitch carries information worth understanding. Graduating with a 3.81 CGPA, I have published in IEEE and MDPI proceedings and built systems that listen to the body, from deep-learning models that detect malignant lung nodules to an EMG-driven exoskeleton designed to move the hands of people living with paralysis. Today I bring that same precision to the hospital floor at Shalamar Hospital, where I keep life-critical equipment calibrated, trusted and ready.</p>
+</div>
+<div class="hv hv-cyan" style="flex: 1 1 440px; min-width: 0; background: #0F1626; border: 1px solid #1C2740; border-radius: 18px; padding: 32px; display: flex; flex-direction: column; gap: 14px">
+<h3 style="margin: 0; font-family: 'Space Grotesk', sans-serif; font-weight: 600; font-size: 22px">Research Vision</h3>
+<p style="margin: 0; font-size: 16px; line-height: 1.8; color: #B4C0D3">My research unites signal processing, machine learning, embedded systems and human–machine interaction in pursuit of a single goal: restoring what injury and illness take away. I am drawn to physiological-signal interfaces, neural engineering, wearable sensing, medical imaging and neurorehabilitation robotics, and to the hard, rewarding work of carrying them out of the lab and into the lives of patients.</p>
+</div>
+</div>
+</div>
+</section>
+
+<!-- EDUCATION -->
+<section id="education" style="background: #070B14">
+<div style="max-width: 1200px; margin: 0 auto; padding: 104px 24px; display: flex; flex-direction: column; gap: 36px">
+<div style="display: flex; flex-direction: column; gap: 10px">
+<p style="margin: 0; font-family: 'JetBrains Mono', monospace; font-size: 14px; color: #22D3EE">// 02 · EDUCATION</p>
+<h2 style="margin: 0; font-family: 'Space Grotesk', sans-serif; font-weight: 700; font-size: clamp(32px, 3.8vw, 50px); line-height: 1.08; letter-spacing: -0.02em">Foundations built with distinction.</h2>
+</div>
+<div class="hv hv-cyan hv-flat" style="background: #0F1626; border: 1px solid #1C2740; border-radius: 18px; padding: 32px; display: flex; flex-wrap: wrap; gap: 24px 48px; align-items: flex-start">
+<div style="flex: 999 1 480px; min-width: 0; display: flex; flex-direction: column; gap: 10px">
+<span style="font-family: 'JetBrains Mono', monospace; font-size: 13px; color: #9AA8BF">2021 — 2025 · LAHORE, PAKISTAN</span>
+<h3 style="margin: 0; font-family: 'Space Grotesk', sans-serif; font-weight: 600; font-size: 26px; line-height: 1.25">BSc Biomedical Engineering</h3>
+<p style="margin: 0; font-size: 17px; color: #C3CEDF">Riphah International University</p>
+<p style="margin: 0; font-size: 15px; line-height: 1.7; color: #9AA8BF"><strong style="color: #C3CEDF; font-weight: 600">Thesis:</strong> A Real-Time EMG-Based Assistive Hand Exoskeleton for Cervical Spinal Cord Injury Patients</p>
+<div style="display: flex; flex-wrap: wrap; gap: 8px; padding-top: 6px">
+<span style="font-size: 13px; padding: 6px 12px; border-radius: 8px; background: #141E33; color: #C3CEDF">Biomedical Signal Processing</span>
+<span style="font-size: 13px; padding: 6px 12px; border-radius: 8px; background: #141E33; color: #C3CEDF">Medical Image Processing</span>
+<span style="font-size: 13px; padding: 6px 12px; border-radius: 8px; background: #141E33; color: #C3CEDF">Artificial Intelligence</span>
+<span style="font-size: 13px; padding: 6px 12px; border-radius: 8px; background: #141E33; color: #C3CEDF">Biomedical Control Systems</span>
+</div>
+</div>
+<div style="flex: 1 1 200px; display: flex; flex-direction: column; gap: 4px; padding: 22px 24px; border-radius: 14px; border: 1px solid #22D3EE33; background: #0B1220">
+<span style="font-family: 'JetBrains Mono', monospace; font-size: 12px; color: #9AA8BF">CGPA</span>
+<span style="font-family: 'Space Grotesk', sans-serif; font-weight: 700; font-size: 44px; color: #22D3EE">3.81<span style="font-size: 20px; color: #9AA8BF"> / 4.00</span></span>
+<span style="font-size: 14px; color: #9AA8BF">139 credit hours · Overall Excellence Award</span>
+<a href="assets/docs/Muhammad_Taqi_Abbas_Transcript.pdf" download="Muhammad_Taqi_Abbas_Transcript.pdf" class="btn-ghost" style="margin-top: 10px; display: inline-flex; align-items: center; justify-content: center; gap: 8px; min-height: 44px; padding: 0 16px; border-radius: 10px; border: 1px solid #2A3A57; color: #E6EDF7; text-decoration: none; font-weight: 600; font-size: 15px"><svg aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 3H6a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V9z"></path><path d="M14 3v6h6"></path><path d="M9 14h6M9 17h4"></path></svg>Transcript</a>
+</div>
+</div>
+</div>
+</section>
+
+<!-- CORE COMPETENCIES -->
+<section id="skills" style="background: #0A101C; border-top: 1px solid #1C2740; border-bottom: 1px solid #1C2740">
+<div style="max-width: 1200px; margin: 0 auto; padding: 104px 24px; display: flex; flex-direction: column; gap: 36px">
+<div style="display: flex; flex-direction: column; gap: 10px">
+<p style="margin: 0; font-family: 'JetBrains Mono', monospace; font-size: 14px; color: #22D3EE">// 03 · CORE COMPETENCIES</p>
+<h2 style="margin: 0; font-family: 'Space Grotesk', sans-serif; font-weight: 700; font-size: clamp(32px, 3.8vw, 50px); line-height: 1.08; letter-spacing: -0.02em">A toolkit forged where medicine meets machines.</h2>
+</div>
+<div style="display: grid; grid-template-columns: repeat(auto-fill, minmax(330px, 1fr)); gap: 18px">
+
+<div class="hv hv-cyan" style="background: #0F1626; border: 1px solid #1C2740; border-radius: 18px; overflow: hidden; display: flex; flex-direction: column">
+<div class="grid-dark" style="height: 130px; background-color: #0B1220; border-bottom: 1px solid #1C2740; display: flex; align-items: center; justify-content: center">
+<svg aria-hidden="true" viewBox="0 0 260 110" style="width: 78%; height: 100px" fill="none" stroke-linecap="round"><g stroke="#2E4566" stroke-width="1.4"><path d="M40 25L130 15M40 25L130 55M40 25L130 95M40 55L130 15M40 55L130 55M40 55L130 95M40 85L130 15M40 85L130 55M40 85L130 95M130 15L220 40M130 55L220 40M130 95L220 40M130 15L220 75M130 55L220 75M130 95L220 75"></path></g><path class="flow" d="M40 55L130 55L220 40" stroke="#22D3EE" stroke-width="2.4"></path><path class="flow" d="M40 85L130 15L220 75" stroke="#22D3EE" stroke-width="1.6" stroke-opacity="0.55"></path><circle cx="40" cy="25" r="7" fill="#0F1626" stroke="#C3CEDF" stroke-width="2"></circle><circle class="pulse" cx="40" cy="55" r="7" fill="#22D3EE"></circle><circle cx="40" cy="85" r="7" fill="#0F1626" stroke="#C3CEDF" stroke-width="2"></circle><circle cx="130" cy="15" r="7" fill="#0F1626" stroke="#C3CEDF" stroke-width="2"></circle><circle class="pulse d2" cx="130" cy="55" r="7" fill="#22D3EE"></circle><circle cx="130" cy="95" r="7" fill="#0F1626" stroke="#C3CEDF" stroke-width="2"></circle><circle class="pulse d3" cx="220" cy="40" r="9" fill="#22D3EE"></circle><circle cx="220" cy="75" r="9" fill="#0F1626" stroke="#C3CEDF" stroke-width="2"></circle></svg>
+</div>
+<div style="padding: 24px 26px 26px; display: flex; flex-direction: column; gap: 12px">
+<h3 style="margin: 0; font-family: 'Space Grotesk', sans-serif; font-weight: 600; font-size: 20px">AI &amp; Machine Learning</h3>
+<p style="margin: 0; font-size: 15px; line-height: 1.65; color: #9AA8BF">Deep convolutional networks for medical images and ensemble classifiers that decode intent from muscle signals.</p>
+<div style="display: flex; flex-wrap: wrap; gap: 6px"><span class="tag" style="font-family: 'JetBrains Mono', monospace; font-size: 12px; padding: 4px 9px; border-radius: 6px; border: 1px solid #2A3A57; color: #C3CEDF">Python</span><span class="tag" style="font-family: 'JetBrains Mono', monospace; font-size: 12px; padding: 4px 9px; border-radius: 6px; border: 1px solid #2A3A57; color: #C3CEDF">CNNs</span><span class="tag" style="font-family: 'JetBrains Mono', monospace; font-size: 12px; padding: 4px 9px; border-radius: 6px; border: 1px solid #2A3A57; color: #C3CEDF">Random Forest</span><span class="tag" style="font-family: 'JetBrains Mono', monospace; font-size: 12px; padding: 4px 9px; border-radius: 6px; border: 1px solid #2A3A57; color: #C3CEDF">C++</span></div>
+</div>
+</div>
+
+<div class="hv hv-green" style="background: #0F1626; border: 1px solid #1C2740; border-radius: 18px; overflow: hidden; display: flex; flex-direction: column">
+<div class="grid-dark" style="height: 130px; background-color: #0B1220; border-bottom: 1px solid #1C2740; display: flex; align-items: center; justify-content: center">
+<svg aria-hidden="true" viewBox="0 0 260 110" style="width: 84%; height: 100px; overflow: hidden" fill="none" stroke-linejoin="round" stroke-linecap="round"><g class="scroll260"><path d="M0 35 L20 35 L26 30 L32 35 L42 35 L46 40 L52 6 L58 58 L62 35 L74 35 L86 26 L98 35 L130 35 L150 35 L156 30 L162 35 L172 35 L176 40 L182 6 L188 58 L192 35 L204 35 L216 26 L228 35 L260 35 L280 35 L286 30 L292 35 L302 35 L306 40 L312 6 L318 58 L322 35 L334 35 L346 26 L358 35 L390 35 L410 35 L416 30 L422 35 L432 35 L436 40 L442 6 L448 58 L452 35 L464 35 L476 26 L488 35 L520 35" stroke="#34D399" stroke-width="2.2"></path><path d="M0 82 L4 82 L8 81 L12 82 L16 83 L20 80 L24 80 L28 83 L32 81 L36 81 L40 84 L44 82 L48 88 L52 81 L56 86 L60 70 L64 87 L68 97 L72 83 L76 91 L80 88 L84 69 L88 88 L92 84 L96 80 L100 80 L104 83 L108 82 L112 83 L116 84 L120 83 L124 84 L128 82 L130 82 L134 82 L138 81 L142 82 L146 83 L150 80 L154 80 L158 83 L162 81 L166 81 L170 84 L174 82 L178 88 L182 81 L186 86 L190 70 L194 87 L198 97 L202 83 L206 91 L210 88 L214 69 L218 88 L222 84 L226 80 L230 80 L234 83 L238 82 L242 83 L246 84 L250 83 L254 84 L258 82 L260 82 L264 82 L268 81 L272 82 L276 83 L280 80 L284 80 L288 83 L292 81 L296 81 L300 84 L304 82 L308 88 L312 81 L316 86 L320 70 L324 87 L328 97 L332 83 L336 91 L340 88 L344 69 L348 88 L352 84 L356 80 L360 80 L364 83 L368 82 L372 83 L376 84 L380 83 L384 84 L388 82 L390 82 L394 82 L398 81 L402 82 L406 83 L410 80 L414 80 L418 83 L422 81 L426 81 L430 84 L434 82 L438 88 L442 81 L446 86 L450 70 L454 87 L458 97 L462 83 L466 91 L470 88 L474 69 L478 88 L482 84 L486 80 L490 80 L494 83 L498 82 L502 83 L506 84 L510 83 L514 84 L518 82 L520 82" stroke="#22D3EE" stroke-width="1.6"></path></g></svg>
+</div>
+<div style="padding: 24px 26px 26px; display: flex; flex-direction: column; gap: 12px">
+<h3 style="margin: 0; font-family: 'Space Grotesk', sans-serif; font-weight: 600; font-size: 20px">Biomedical Signal Processing</h3>
+<p style="margin: 0; font-size: 15px; line-height: 1.65; color: #9AA8BF">Capturing, filtering and interpreting EMG and ECG, from gesture recognition to arrhythmia detection.</p>
+<div style="display: flex; flex-wrap: wrap; gap: 6px"><span class="tag" style="font-family: 'JetBrains Mono', monospace; font-size: 12px; padding: 4px 9px; border-radius: 6px; border: 1px solid #2A3A57; color: #C3CEDF">EMG</span><span class="tag" style="font-family: 'JetBrains Mono', monospace; font-size: 12px; padding: 4px 9px; border-radius: 6px; border: 1px solid #2A3A57; color: #C3CEDF">ECG</span><span class="tag" style="font-family: 'JetBrains Mono', monospace; font-size: 12px; padding: 4px 9px; border-radius: 6px; border: 1px solid #2A3A57; color: #C3CEDF">Filtering</span><span class="tag" style="font-family: 'JetBrains Mono', monospace; font-size: 12px; padding: 4px 9px; border-radius: 6px; border: 1px solid #2A3A57; color: #C3CEDF">MATLAB</span></div>
+</div>
+</div>
+
+<div class="hv hv-amber" style="background: #0F1626; border: 1px solid #1C2740; border-radius: 18px; overflow: hidden; display: flex; flex-direction: column">
+<div class="grid-dark" style="height: 130px; background-color: #0B1220; border-bottom: 1px solid #1C2740; display: flex; align-items: center; justify-content: center">
+<svg aria-hidden="true" viewBox="0 0 260 110" style="width: 78%; height: 100px" fill="none" stroke-linecap="round" stroke-linejoin="round"><path class="flow" d="M20 30H80V20M20 80H80V90M180 30H240M180 80H240M130 20V5M130 90V105" stroke="#FBBF24" stroke-width="2" stroke-opacity="0.8"></path><circle class="pulse" cx="20" cy="30" r="4" fill="#FBBF24"></circle><circle class="pulse d2" cx="20" cy="80" r="4" fill="#FBBF24"></circle><circle class="pulse d3" cx="240" cy="30" r="4" fill="#FBBF24"></circle><circle class="pulse d4" cx="240" cy="80" r="4" fill="#FBBF24"></circle><rect x="90" y="20" width="80" height="70" rx="8" fill="#0B1220" stroke="#FBBF24" stroke-width="2.4"></rect><rect x="108" y="38" width="44" height="34" rx="4" stroke="#C3CEDF" stroke-width="1.8"></rect><path d="M100 20V12M115 20V12M130 20V12M145 20V12M160 20V12M100 90V98M115 90V98M130 90V98M145 90V98M160 90V98" stroke="#C3CEDF" stroke-width="2"></path><path class="pulse" d="M196 55c6-8 14-8 20 0" stroke="#22D3EE" stroke-width="2"></path><path class="pulse d2" d="M188 55c10-16 26-16 36 0" stroke="#22D3EE" stroke-width="2"></path></svg>
+</div>
+<div style="padding: 24px 26px 26px; display: flex; flex-direction: column; gap: 12px">
+<h3 style="margin: 0; font-family: 'Space Grotesk', sans-serif; font-weight: 600; font-size: 20px">Embedded Systems &amp; Sensors</h3>
+<p style="margin: 0; font-size: 15px; line-height: 1.65; color: #9AA8BF">Microcontroller firmware, wireless links and sensor integration for wearables and IoT patient monitoring.</p>
+<div style="display: flex; flex-wrap: wrap; gap: 6px"><span class="tag" style="font-family: 'JetBrains Mono', monospace; font-size: 12px; padding: 4px 9px; border-radius: 6px; border: 1px solid #2A3A57; color: #C3CEDF">ESP32</span><span class="tag" style="font-family: 'JetBrains Mono', monospace; font-size: 12px; padding: 4px 9px; border-radius: 6px; border: 1px solid #2A3A57; color: #C3CEDF">Arduino</span><span class="tag" style="font-family: 'JetBrains Mono', monospace; font-size: 12px; padding: 4px 9px; border-radius: 6px; border: 1px solid #2A3A57; color: #C3CEDF">SpO₂</span><span class="tag" style="font-family: 'JetBrains Mono', monospace; font-size: 12px; padding: 4px 9px; border-radius: 6px; border: 1px solid #2A3A57; color: #C3CEDF">Temperature</span></div>
+</div>
+</div>
+
+<div class="hv hv-violet" style="background: #0F1626; border: 1px solid #1C2740; border-radius: 18px; overflow: hidden; display: flex; flex-direction: column">
+<div class="grid-dark" style="height: 130px; background-color: #0B1220; border-bottom: 1px solid #1C2740; display: flex; align-items: center; justify-content: center">
+<svg aria-hidden="true" viewBox="0 0 260 110" style="width: 78%; height: 100px" fill="none" stroke-linejoin="round"><path d="M90 30L130 10L170 30L170 75L130 95L90 75Z" stroke="#A78BFA" stroke-width="2.4"></path><path d="M90 30L130 50L170 30M130 50V95" stroke="#A78BFA" stroke-width="2"></path><path class="flow" d="M110 40L150 20M110 62L150 42M110 84L150 64" stroke="#7C6BB8" stroke-width="1.4"></path><path d="M30 95H70M30 95V40M30 40l-5 8M30 40l5 8M70 95l-8-5M70 95l-8 5" stroke="#C3CEDF" stroke-width="1.8" stroke-linecap="round"></path><g class="spin"><circle cx="215" cy="55" r="24" stroke="#22D3EE" stroke-width="2"></circle><circle cx="215" cy="55" r="9" stroke="#22D3EE" stroke-width="2"></circle><path d="M215 25v8M215 77v8M185 55h8M237 55h8M194 34l6 6M230 70l6 6M236 34l-6 6M200 70l-6 6" stroke="#22D3EE" stroke-width="2" stroke-linecap="round"></path></g></svg>
+</div>
+<div style="padding: 24px 26px 26px; display: flex; flex-direction: column; gap: 12px">
+<h3 style="margin: 0; font-family: 'Space Grotesk', sans-serif; font-weight: 600; font-size: 20px">Biomedical Design &amp; Simulation</h3>
+<p style="margin: 0; font-size: 15px; line-height: 1.65; color: #9AA8BF">From CAD linkages and 3D-printed parts to multiphysics models and circuit simulation for medical devices.</p>
+<div style="display: flex; flex-wrap: wrap; gap: 6px"><span class="tag" style="font-family: 'JetBrains Mono', monospace; font-size: 12px; padding: 4px 9px; border-radius: 6px; border: 1px solid #2A3A57; color: #C3CEDF">COMSOL</span><span class="tag" style="font-family: 'JetBrains Mono', monospace; font-size: 12px; padding: 4px 9px; border-radius: 6px; border: 1px solid #2A3A57; color: #C3CEDF">SolidWorks</span><span class="tag" style="font-family: 'JetBrains Mono', monospace; font-size: 12px; padding: 4px 9px; border-radius: 6px; border: 1px solid #2A3A57; color: #C3CEDF">AutoCAD</span><span class="tag" style="font-family: 'JetBrains Mono', monospace; font-size: 12px; padding: 4px 9px; border-radius: 6px; border: 1px solid #2A3A57; color: #C3CEDF">Multisim</span><span class="tag" style="font-family: 'JetBrains Mono', monospace; font-size: 12px; padding: 4px 9px; border-radius: 6px; border: 1px solid #2A3A57; color: #C3CEDF">Proteus</span></div>
+</div>
+</div>
+
+<div class="hv hv-pink" style="background: #0F1626; border: 1px solid #1C2740; border-radius: 18px; overflow: hidden; display: flex; flex-direction: column">
+<div class="grid-dark" style="height: 130px; background-color: #0B1220; border-bottom: 1px solid #1C2740; display: flex; align-items: center; justify-content: center">
+<svg aria-hidden="true" viewBox="0 0 260 110" style="width: 78%; height: 100px" fill="none" stroke-linecap="round" stroke-linejoin="round"><rect x="40" y="10" width="180" height="76" rx="10" stroke="#F472B6" stroke-width="2.4"></rect><path d="M110 86v12M150 86v12M90 100h80" stroke="#C3CEDF" stroke-width="2"></path><path d="M54 40H86L92 32L100 52L108 18L116 46L122 40H150" stroke="#34D399" stroke-opacity="0.2" stroke-width="2.2"></path><path class="sweep" d="M54 40H86L92 32L100 52L108 18L116 46L122 40H150" stroke="#34D399" stroke-width="2.4"></path><path d="M54 68C66 56 74 56 86 68S106 80 118 68S138 56 150 68" stroke="#22D3EE" stroke-opacity="0.2" stroke-width="2"></path><path class="sweep" style="animation-delay: .6s" d="M54 68C66 56 74 56 86 68S106 80 118 68S138 56 150 68" stroke="#22D3EE" stroke-width="2"></path><rect class="pulse" x="164" y="24" width="42" height="18" rx="4" stroke="#F472B6" stroke-width="1.6"></rect><rect class="pulse d3" x="164" y="52" width="42" height="18" rx="4" stroke="#C3CEDF" stroke-width="1.6"></rect></svg>
+</div>
+<div style="padding: 24px 26px 26px; display: flex; flex-direction: column; gap: 12px">
+<h3 style="margin: 0; font-family: 'Space Grotesk', sans-serif; font-weight: 600; font-size: 20px">Clinical Engineering</h3>
+<p style="margin: 0; font-size: 15px; line-height: 1.65; color: #9AA8BF">Installing, calibrating and safeguarding patient monitors and ventilators where every minute of uptime matters.</p>
+<div style="display: flex; flex-wrap: wrap; gap: 6px"><span class="tag" style="font-family: 'JetBrains Mono', monospace; font-size: 12px; padding: 4px 9px; border-radius: 6px; border: 1px solid #2A3A57; color: #C3CEDF">Calibration</span><span class="tag" style="font-family: 'JetBrains Mono', monospace; font-size: 12px; padding: 4px 9px; border-radius: 6px; border: 1px solid #2A3A57; color: #C3CEDF">Preventive maintenance</span><span class="tag" style="font-family: 'JetBrains Mono', monospace; font-size: 12px; padding: 4px 9px; border-radius: 6px; border: 1px solid #2A3A57; color: #C3CEDF">User training</span></div>
+</div>
+</div>
+
+<div class="hv hv-cyan" style="background: #0F1626; border: 1px solid #1C2740; border-radius: 18px; overflow: hidden; display: flex; flex-direction: column">
+<div class="grid-dark" style="height: 130px; background-color: #0B1220; border-bottom: 1px solid #1C2740; display: flex; align-items: center; justify-content: center">
+<svg aria-hidden="true" viewBox="0 0 260 110" style="width: 78%; height: 100px" fill="none" stroke-linecap="round" stroke-linejoin="round"><rect x="20" y="18" width="100" height="74" rx="8" stroke="#22D3EE" stroke-width="2.4"></rect><path d="M38 40l14 12-14 12" stroke="#C3CEDF" stroke-width="2.2"></path><rect class="blink" x="60" y="60" width="20" height="6" rx="1" fill="#67E8F9"></rect><path class="grow" d="M150 30h90" stroke="#3A5A80" stroke-width="2.4"></path><path class="grow" style="animation-delay: .4s" d="M150 55h70" stroke="#3A5A80" stroke-width="2.4"></path><path class="grow" style="animation-delay: .8s" d="M150 80h84" stroke="#3A5A80" stroke-width="2.4"></path><circle class="pulse" cx="150" cy="30" r="4" fill="#FBBF24"></circle><circle class="pulse d2" cx="150" cy="55" r="4" fill="#34D399"></circle><circle class="pulse d3" cx="150" cy="80" r="4" fill="#A78BFA"></circle></svg>
+</div>
+<div style="padding: 24px 26px 26px; display: flex; flex-direction: column; gap: 12px">
+<h3 style="margin: 0; font-family: 'Space Grotesk', sans-serif; font-weight: 600; font-size: 20px">Programming &amp; Communication</h3>
+<p style="margin: 0; font-size: 15px; line-height: 1.65; color: #9AA8BF">Fluent in code and in explaining it, after years of teaching STEM and presenting research on conference stages.</p>
+<div style="display: flex; flex-wrap: wrap; gap: 6px"><span class="tag" style="font-family: 'JetBrains Mono', monospace; font-size: 12px; padding: 4px 9px; border-radius: 6px; border: 1px solid #2A3A57; color: #C3CEDF">Python</span><span class="tag" style="font-family: 'JetBrains Mono', monospace; font-size: 12px; padding: 4px 9px; border-radius: 6px; border: 1px solid #2A3A57; color: #C3CEDF">C++</span><span class="tag" style="font-family: 'JetBrains Mono', monospace; font-size: 12px; padding: 4px 9px; border-radius: 6px; border: 1px solid #2A3A57; color: #C3CEDF">MATLAB</span><span class="tag" style="font-family: 'JetBrains Mono', monospace; font-size: 12px; padding: 4px 9px; border-radius: 6px; border: 1px solid #2A3A57; color: #C3CEDF">MS Office</span></div>
+</div>
+</div>
+
+</div>
+</div>
+</section>
+
+<!-- EXPERIENCE -->
+<section id="experience" style="background: #070B14">
+<div style="max-width: 1200px; margin: 0 auto; padding: 104px 24px; display: flex; flex-direction: column; gap: 40px">
+<div style="display: flex; flex-direction: column; gap: 10px">
+<p style="margin: 0; font-family: 'JetBrains Mono', monospace; font-size: 14px; color: #22D3EE">// 04 · PROFESSIONAL EXPERIENCE</p>
+<h2 style="margin: 0; font-family: 'Space Grotesk', sans-serif; font-weight: 700; font-size: clamp(32px, 3.8vw, 50px); line-height: 1.08; letter-spacing: -0.02em">From the research bench to the hospital ward.</h2>
+</div>
+<ol style="margin: 0; padding: 0 0 0 28px; list-style: none; border-left: 2px solid #1F2D47; display: flex; flex-direction: column; gap: 36px">
+
+<li style="position: relative; display: flex; flex-direction: column; gap: 10px">
+<span aria-hidden="true" style="position: absolute; left: -37px; top: 4px; width: 14px; height: 14px; border-radius: 50%; background: #22D3EE; border: 3px solid #070B14"></span>
+<span style="font-family: 'JetBrains Mono', monospace; font-size: 13px; color: #22D3EE">JAN 2026 — PRESENT</span>
+<h3 style="margin: 0; font-family: 'Space Grotesk', sans-serif; font-weight: 600; font-size: 22px">Biomedical Engineer <span style="font-weight: 500; color: #9AA8BF">@ Shalamar Hospital, Lahore</span></h3>
+<ul style="margin: 0; padding-left: 20px; font-size: 16px; line-height: 1.7; color: #B4C0D3">
+<li>Install, calibrate and maintain life-critical equipment, including patient monitors and ventilators.</li>
+<li>Diagnose and repair medical devices fast, keeping critical-care units running with minimal downtime.</li>
+</ul>
+</li>
+
+<li style="position: relative; display: flex; flex-direction: column; gap: 10px">
+<span aria-hidden="true" style="position: absolute; left: -37px; top: 4px; width: 14px; height: 14px; border-radius: 50%; background: #2A3A57; border: 3px solid #070B14"></span>
+<span style="font-family: 'JetBrains Mono', monospace; font-size: 13px; color: #9AA8BF">AUG 2025 — JAN 2026</span>
+<h3 style="margin: 0; font-family: 'Space Grotesk', sans-serif; font-weight: 600; font-size: 22px">Sales &amp; Service Engineer <span style="font-weight: 500; color: #9AA8BF">@ Vertex Medical Pvt Ltd</span></h3>
+<ul style="margin: 0; padding-left: 20px; font-size: 16px; line-height: 1.7; color: #B4C0D3">
+<li>Led product demonstrations and hands-on training for clinical staff.</li>
+<li>Delivered responsive technical support and resolved client issues promptly.</li>
+<li>Partnered with the sales team on technical presentations and client workshops.</li>
+</ul>
+</li>
+
+<li style="position: relative; display: flex; flex-direction: column; gap: 10px">
+<span aria-hidden="true" style="position: absolute; left: -37px; top: 4px; width: 14px; height: 14px; border-radius: 50%; background: #2A3A57; border: 3px solid #070B14"></span>
+<span style="font-family: 'JetBrains Mono', monospace; font-size: 13px; color: #9AA8BF">JAN 2024 — JUL 2025</span>
+<h3 style="margin: 0; font-family: 'Space Grotesk', sans-serif; font-weight: 600; font-size: 22px">Research Assistant <span style="font-weight: 500; color: #9AA8BF">@ Riphah International University</span></h3>
+<ul style="margin: 0; padding-left: 20px; font-size: 16px; line-height: 1.7; color: #B4C0D3">
+<li>Signal processing, sensor integration, data collection, embedded programming and hardware troubleshooting.</li>
+<li>Supported lab management, student experiments, literature reviews and documentation.</li>
+<li>Contributed to wearable healthcare devices, IoT-based monitoring systems and AI-in-healthcare research.</li>
+</ul>
+</li>
+
+<li style="position: relative; display: flex; flex-direction: column; gap: 10px">
+<span aria-hidden="true" style="position: absolute; left: -37px; top: 4px; width: 14px; height: 14px; border-radius: 50%; background: #2A3A57; border: 3px solid #070B14"></span>
+<span style="font-family: 'JetBrains Mono', monospace; font-size: 13px; color: #9AA8BF">FEB 2019 — PRESENT</span>
+<h3 style="margin: 0; font-family: 'Space Grotesk', sans-serif; font-weight: 600; font-size: 22px">STEM Instructor <span style="font-weight: 500; color: #9AA8BF">@ Online &amp; home tutoring</span></h3>
+<ul style="margin: 0; padding-left: 20px; font-size: 16px; line-height: 1.7; color: #B4C0D3">
+<li>Make science, technology, engineering and maths come alive through practical examples.</li>
+<li>Tailor every lesson to the learner, building problem-solving and analytical confidence.</li>
+</ul>
+</li>
+
+</ol>
+</div>
+</section>
+
+<!-- PORTFOLIO -->
+<section id="portfolio" style="background: #0A101C; border-top: 1px solid #1C2740; border-bottom: 1px solid #1C2740">
+<div style="max-width: 1200px; margin: 0 auto; padding: 104px 24px; display: flex; flex-direction: column; gap: 36px">
+<div style="display: flex; flex-direction: column; gap: 10px">
+<p style="margin: 0; font-family: 'JetBrains Mono', monospace; font-size: 14px; color: #22D3EE">// 05 · FEATURED PROJECTS</p>
+<h2 style="margin: 0; font-family: 'Space Grotesk', sans-serif; font-weight: 700; font-size: clamp(32px, 3.8vw, 50px); line-height: 1.08; letter-spacing: -0.02em">Ideas, engineered into reality.</h2>
+</div>
+<div style="display: grid; grid-template-columns: repeat(auto-fill, minmax(min(420px, 100%), 1fr)); gap: 18px">
+
+<article class="hv hv-cyan hv-flat zoom" style="grid-column: 1 / -1; background: #0F1626; border: 1px solid #22D3EE40; border-radius: 20px; overflow: hidden; display: flex; flex-wrap: wrap">
+<img src="assets/img/exoskeleton-cad.jpg" alt="Colour CAD render of the EMG-driven hand exoskeleton with a motor along each finger" style="display: block; flex: 1 1 380px; min-width: 0; max-width: 100%; aspect-ratio: 4 / 3; object-fit: cover">
+<div style="flex: 999 1 420px; min-width: 0; padding: clamp(24px, 3.5vw, 40px); display: flex; flex-direction: column; gap: 14px">
+<span style="font-family: 'JetBrains Mono', monospace; font-size: 12px; color: #22D3EE">FINAL YEAR PROJECT · 2024–2025</span>
+<h3 style="margin: 0; font-family: 'Space Grotesk', sans-serif; font-weight: 700; font-size: clamp(24px, 2.6vw, 32px); line-height: 1.2; letter-spacing: -0.01em">Real-Time EMG-Based Assistive Hand Exoskeleton</h3>
+<p style="margin: 0; font-size: 16px; line-height: 1.7; color: #B4C0D3">Giving the hand its motion back to people living with cervical spinal cord injury. Three EMG sensors read the forearm muscles, an Arduino filters the signals, and an ESP32 sends them to a cloud model that recognises the intended gesture. Gear motors on 3D-printed finger linkages then carry it out, in real time.</p>
+<div style="display: flex; flex-wrap: wrap; gap: 10px">
+<span style="display: flex; flex-direction: column; padding: 10px 14px; border-radius: 12px; background: #0B1220; border: 1px solid #1C2740"><span style="font-family: 'Space Grotesk', sans-serif; font-weight: 700; font-size: 20px; color: #34D399">&gt;95%</span><span style="font-size: 12px; color: #9AA8BF">accuracy</span></span>
+<span style="display: flex; flex-direction: column; padding: 10px 14px; border-radius: 12px; background: #0B1220; border: 1px solid #1C2740"><span style="font-family: 'Space Grotesk', sans-serif; font-weight: 700; font-size: 20px; color: #22D3EE">~280 ms</span><span style="font-size: 12px; color: #9AA8BF">latency</span></span>
+<span style="display: flex; flex-direction: column; padding: 10px 14px; border-radius: 12px; background: #0B1220; border: 1px solid #1C2740"><span style="font-family: 'Space Grotesk', sans-serif; font-weight: 700; font-size: 20px; color: #FBBF24">4</span><span style="font-size: 12px; color: #9AA8BF">gestures</span></span>
+<span style="display: flex; flex-direction: column; padding: 10px 14px; border-radius: 12px; background: #0B1220; border: 1px solid #1C2740"><span style="font-family: 'Space Grotesk', sans-serif; font-weight: 700; font-size: 20px; color: #A78BFA">Random Forest</span><span style="font-size: 12px; color: #9AA8BF">best classifier</span></span>
+</div>
+<div style="display: flex; flex-wrap: wrap; gap: 6px"><span class="tag" style="font-family: 'JetBrains Mono', monospace; font-size: 12px; padding: 4px 9px; border-radius: 6px; border: 1px solid transparent; background: #141E33; color: #C3CEDF">EMG</span><span class="tag" style="font-family: 'JetBrains Mono', monospace; font-size: 12px; padding: 4px 9px; border-radius: 6px; border: 1px solid transparent; background: #141E33; color: #C3CEDF">Machine Learning</span><span class="tag" style="font-family: 'JetBrains Mono', monospace; font-size: 12px; padding: 4px 9px; border-radius: 6px; border: 1px solid transparent; background: #141E33; color: #C3CEDF">ESP32 · Arduino</span><span class="tag" style="font-family: 'JetBrains Mono', monospace; font-size: 12px; padding: 4px 9px; border-radius: 6px; border: 1px solid transparent; background: #141E33; color: #C3CEDF">Robotics Control</span></div>
+<p style="margin: 0; font-size: 13px; line-height: 1.6; color: #7F8DA6">With Mishaal Khawar, Komal Tariq and Faizan Ahmed · Advised by Engr. Zainab Munir · <a href="#gallery" style="color: #67E8F9">See the prototype →</a></p>
+</div>
+</article>
+
+<article class="hv hv-cyan" style="background: #0F1626; border: 1px solid #1C2740; border-radius: 18px; overflow: hidden; display: flex; flex-direction: column">
+<div class="grid-dark" style="aspect-ratio: 16 / 9; background-color: #0B1220; border-bottom: 1px solid #1C2740; display: flex; align-items: center; justify-content: center">
+<svg role="img" aria-label="Illustration: convolutional neural network layers" viewBox="0 0 320 180" style="width: 82%; height: auto" fill="none" stroke-linejoin="round"><rect x="16" y="40" width="96" height="96" rx="4" stroke="#C3CEDF" stroke-width="2.5"></rect><circle cx="58" cy="82" r="14" stroke="#22D3EE" stroke-width="2.5"></circle><circle cx="58" cy="82" r="5" fill="#22D3EE"></circle><rect x="136" y="54" width="68" height="68" rx="4" stroke="#C3CEDF" stroke-width="2.5"></rect><rect x="144" y="62" width="68" height="68" rx="4" stroke="#22D3EE" stroke-width="2"></rect><rect x="232" y="72" width="34" height="34" rx="3" stroke="#C3CEDF" stroke-width="2.5"></rect><rect x="238" y="78" width="34" height="34" rx="3" stroke="#22D3EE" stroke-width="2"></rect><circle cx="298" cy="76" r="6" fill="#F472B6"></circle><circle cx="298" cy="104" r="6" stroke="#C3CEDF" stroke-width="2"></circle><path d="M112 88 H136 M212 96 H232 M272 95 L292 78 M272 95 L292 104" stroke="#5A7090" stroke-width="1.6"></path></svg>
+</div>
+<div style="padding: 24px 26px 26px; display: flex; flex-direction: column; gap: 12px; flex: 1">
+<span style="font-family: 'JetBrains Mono', monospace; font-size: 12px; color: #22D3EE">IEEE PAPER · 2025</span>
+<h3 style="margin: 0; font-family: 'Space Grotesk', sans-serif; font-weight: 600; font-size: 20px; line-height: 1.3">Lung Nodule Malignancy Detection</h3>
+<p style="margin: 0; font-size: 15px; line-height: 1.65; color: #9AA8BF">CNN-based deep learning that helps detect malignancy in lung nodules, presented at ETECTE 2024.</p>
+<div style="margin-top: auto; display: flex; flex-wrap: wrap; gap: 6px"><span class="tag" style="font-family: 'JetBrains Mono', monospace; font-size: 12px; padding: 4px 9px; border-radius: 6px; border: 1px solid transparent; background: #141E33; color: #C3CEDF">Deep Learning</span><span class="tag" style="font-family: 'JetBrains Mono', monospace; font-size: 12px; padding: 4px 9px; border-radius: 6px; border: 1px solid transparent; background: #141E33; color: #C3CEDF">Medical Imaging</span></div>
+</div>
+</article>
+
+<article class="hv hv-violet" style="background: #0F1626; border: 1px solid #1C2740; border-radius: 18px; overflow: hidden; display: flex; flex-direction: column">
+<div class="grid-dark" style="aspect-ratio: 16 / 9; background-color: #0B1220; border-bottom: 1px solid #1C2740; display: flex; align-items: center; justify-content: center">
+<svg role="img" aria-label="Illustration: a portable patient monitor" viewBox="0 0 320 180" style="width: 82%; height: auto" fill="none" stroke-linecap="round" stroke-linejoin="round"><rect x="70" y="24" width="180" height="120" rx="14" stroke="#C3CEDF" stroke-width="2.5"></rect><rect x="84" y="38" width="152" height="76" rx="6" stroke="#2E4566" stroke-width="1.6"></rect><path d="M92 80H130L136 70L144 96L152 50L160 88L166 80H228" stroke="#34D399" stroke-width="2.4"></path><circle cx="100" cy="128" r="5" fill="#F472B6"></circle><circle cx="118" cy="128" r="5" fill="#FBBF24"></circle><rect x="196" y="122" width="40" height="12" rx="6" stroke="#22D3EE" stroke-width="2"></rect><path d="M250 60c10 0 14 8 14 20s-4 20-14 20" stroke="#22D3EE" stroke-width="2"></path><path d="M262 50c16 4 22 16 22 30s-6 26-22 30" stroke="#22D3EE" stroke-width="2" stroke-opacity="0.5"></path></svg>
+</div>
+<div style="padding: 24px 26px 26px; display: flex; flex-direction: column; gap: 12px; flex: 1">
+<span style="font-family: 'JetBrains Mono', monospace; font-size: 12px; color: #22D3EE">HARDWARE · 2024</span>
+<h3 style="margin: 0; font-family: 'Space Grotesk', sans-serif; font-weight: 600; font-size: 20px; line-height: 1.3">Portable Care Taker Patient Monitor</h3>
+<p style="margin: 0; font-size: 15px; line-height: 1.65; color: #9AA8BF">A compact patient monitor that keeps caregivers connected to a patient’s condition.</p>
+<div style="margin-top: auto; display: flex; flex-wrap: wrap; gap: 6px"><span class="tag" style="font-family: 'JetBrains Mono', monospace; font-size: 12px; padding: 4px 9px; border-radius: 6px; border: 1px solid transparent; background: #141E33; color: #C3CEDF">Patient Monitoring</span><span class="tag" style="font-family: 'JetBrains Mono', monospace; font-size: 12px; padding: 4px 9px; border-radius: 6px; border: 1px solid transparent; background: #141E33; color: #C3CEDF">Sensors</span></div>
+</div>
+</article>
+
+<article class="hv hv-pink" style="background: #0F1626; border: 1px solid #1C2740; border-radius: 18px; overflow: hidden; display: flex; flex-direction: column">
+<div class="grid-dark" style="aspect-ratio: 16 / 9; background-color: #0B1220; border-bottom: 1px solid #1C2740; display: flex; align-items: center; justify-content: center">
+<svg role="img" aria-label="Illustration: UV lamp inactivating airborne viruses" viewBox="0 0 320 180" style="width: 82%; height: auto" fill="none" stroke-linecap="round"><rect x="60" y="20" width="200" height="22" rx="11" stroke="#A78BFA" stroke-width="2.5"></rect><path d="M90 52L76 96M130 52L124 100M170 52L170 104M210 52L216 100M246 52L262 96" stroke="#A78BFA" stroke-width="2" stroke-opacity="0.7" stroke-dasharray="4 6"></path><g stroke="#C3CEDF" stroke-width="2"><circle cx="100" cy="132" r="12"></circle><path d="M100 114v6M100 144v6M82 132h6M112 132h6M88 120l4 4M108 140l4 4M112 120l-4 4M92 140l-4 4"></path></g><g stroke="#5A7090" stroke-width="2"><circle cx="220" cy="140" r="10"></circle><path d="M206 126l28 28M234 126l-28 28"></path></g><g stroke="#C3CEDF" stroke-width="2" stroke-opacity="0.6"><circle cx="164" cy="150" r="8"></circle><path d="M164 136v6M164 158v6M150 150h6M172 150h6"></path></g></svg>
+</div>
+<div style="padding: 24px 26px 26px; display: flex; flex-direction: column; gap: 12px; flex: 1">
+<span style="font-family: 'JetBrains Mono', monospace; font-size: 12px; color: #22D3EE">DEVICE DESIGN · 2024</span>
+<h3 style="margin: 0; font-family: 'Space Grotesk', sans-serif; font-weight: 600; font-size: 20px; line-height: 1.3">UV-Pure Guard</h3>
+<p style="margin: 0; font-size: 15px; line-height: 1.65; color: #9AA8BF">A multi-mode UV sterilization system that inactivates airborne viruses in healthcare settings.</p>
+<div style="margin-top: auto; display: flex; flex-wrap: wrap; gap: 6px"><span class="tag" style="font-family: 'JetBrains Mono', monospace; font-size: 12px; padding: 4px 9px; border-radius: 6px; border: 1px solid transparent; background: #141E33; color: #C3CEDF">UV Sterilization</span><span class="tag" style="font-family: 'JetBrains Mono', monospace; font-size: 12px; padding: 4px 9px; border-radius: 6px; border: 1px solid transparent; background: #141E33; color: #C3CEDF">Infection Control</span></div>
+</div>
+</article>
+
+<article class="hv hv-green" style="background: #0F1626; border: 1px solid #1C2740; border-radius: 18px; overflow: hidden; display: flex; flex-direction: column">
+<div class="grid-dark" style="aspect-ratio: 16 / 9; background-color: #0B1220; border-bottom: 1px solid #1C2740; display: flex; align-items: center; justify-content: center">
+<svg role="img" aria-label="Illustration: a conductive hydrogel network" viewBox="0 0 320 180" style="width: 82%; height: auto" fill="none"><path d="M60 60 L120 40 L180 76 L240 50 L280 100 M60 60 L92 120 L160 132 L180 76 M160 132 L230 140 L280 100 M120 40 L92 120 M240 50 L230 140" stroke="#5A7090" stroke-width="1.6"></path><circle cx="60" cy="60" r="16" stroke="#C3CEDF" stroke-width="2.5"></circle><circle cx="120" cy="40" r="10" fill="#34D399"></circle><circle cx="180" cy="76" r="20" stroke="#34D399" stroke-width="2.5"></circle><circle cx="240" cy="50" r="12" stroke="#C3CEDF" stroke-width="2.5"></circle><circle cx="280" cy="100" r="14" fill="#34D399"></circle><circle cx="92" cy="120" r="12" fill="#C3CEDF"></circle><circle cx="160" cy="132" r="10" stroke="#C3CEDF" stroke-width="2.5"></circle><circle cx="230" cy="140" r="16" stroke="#34D399" stroke-width="2.5"></circle></svg>
+</div>
+<div style="padding: 24px 26px 26px; display: flex; flex-direction: column; gap: 12px; flex: 1">
+<span style="font-family: 'JetBrains Mono', monospace; font-size: 12px; color: #22D3EE">MATERIALS · 2024–2025</span>
+<h3 style="margin: 0; font-family: 'Space Grotesk', sans-serif; font-weight: 600; font-size: 20px; line-height: 1.3">From Goo to Glow: Conductive Hydrogels</h3>
+<p style="margin: 0; font-size: 15px; line-height: 1.65; color: #9AA8BF">How electro-conductive hydrogels can transform AI-enhanced wearable bioelectronics. Showcased at UET and LUMS.</p>
+<div style="margin-top: auto; display: flex; flex-wrap: wrap; gap: 6px"><span class="tag" style="font-family: 'JetBrains Mono', monospace; font-size: 12px; padding: 4px 9px; border-radius: 6px; border: 1px solid transparent; background: #141E33; color: #C3CEDF">Wearables</span><span class="tag" style="font-family: 'JetBrains Mono', monospace; font-size: 12px; padding: 4px 9px; border-radius: 6px; border: 1px solid transparent; background: #141E33; color: #C3CEDF">Bioelectronics</span></div>
+</div>
+</article>
+
+</div>
+</div>
+</section>
+
+<!-- PUBLICATIONS -->
+<section id="publications" style="background: #070B14">
+<div style="max-width: 1200px; margin: 0 auto; padding: 104px 24px; display: flex; flex-direction: column; gap: 36px">
+<div style="display: flex; flex-direction: column; gap: 10px">
+<p style="margin: 0; font-family: 'JetBrains Mono', monospace; font-size: 14px; color: #22D3EE">// 06 · RESEARCH PUBLICATIONS</p>
+<h2 style="margin: 0; font-family: 'Space Grotesk', sans-serif; font-weight: 700; font-size: clamp(32px, 3.8vw, 50px); line-height: 1.08; letter-spacing: -0.02em">Contributions to the scientific record.</h2>
+</div>
+<div style="display: flex; flex-direction: column; gap: 14px">
+<article class="hv hv-cyan" style="background: #0F1626; border: 1px solid #1C2740; border-radius: 16px; padding: 24px 28px; display: flex; flex-direction: column; gap: 8px">
+<h3 style="margin: 0; font-family: 'Space Grotesk', sans-serif; font-weight: 600; font-size: 19px; line-height: 1.35">Detecting Lung Nodule Malignancy Using CNN-Based Deep Learning Techniques</h3>
+<p style="margin: 0; font-size: 15px; color: #9AA8BF">Khawar M., <strong style="color: #E6EDF7">Abbas M. T.</strong>, Ahmad F., Tariq K., Anwer S.</p>
+<p style="margin: 0; font-family: 'JetBrains Mono', monospace; font-size: 13px; color: #67E8F9">IEEE · 3rd Int’l Conference on Emerging Trends in Electrical, Control &amp; Telecommunication Engineering · 2025</p>
+</article>
+<article class="hv hv-cyan" style="background: #0F1626; border: 1px solid #1C2740; border-radius: 16px; padding: 24px 28px; display: flex; flex-direction: column; gap: 8px">
+<h3 style="margin: 0; font-family: 'Space Grotesk', sans-serif; font-weight: 600; font-size: 19px; line-height: 1.35">The Impact of Smog on Public Health and Antimicrobial Resistance in Pakistan</h3>
+<p style="margin: 0; font-size: 15px; color: #9AA8BF"><strong style="color: #E6EDF7">Abbas M. T.</strong>, Khawar M., Munir Z.</p>
+<p style="margin: 0; font-family: 'JetBrains Mono', monospace; font-size: 13px; color: #67E8F9">MDPI Proceedings · 7th Int’l Electronic Conference on Atmospheric Sciences · 2025 · First author</p>
+</article>
+<article class="hv hv-cyan" style="background: #0F1626; border: 1px solid #1C2740; border-radius: 16px; padding: 24px 28px; display: flex; flex-direction: column; gap: 8px">
+<h3 style="margin: 0; font-family: 'Space Grotesk', sans-serif; font-weight: 600; font-size: 19px; line-height: 1.35">Immersive Technologies in Healthcare: Virtual Reality’s Role in Antibiotic Resistance</h3>
+<p style="margin: 0; font-size: 15px; color: #9AA8BF">Khawar M., Malik H., <strong style="color: #E6EDF7">Abbas M. T.</strong>, Ashfaq A.</p>
+<p style="margin: 0; font-family: 'JetBrains Mono', monospace; font-size: 13px; color: #67E8F9">MDPI Proceedings · 4th Int’l Electronic Conference on Antibiotics · 2025</p>
+</article>
+<article class="hv hv-cyan" style="background: #0F1626; border: 1px solid #1C2740; border-radius: 16px; padding: 24px 28px; display: flex; flex-direction: column; gap: 8px">
+<h3 style="margin: 0; font-family: 'Space Grotesk', sans-serif; font-weight: 600; font-size: 19px; line-height: 1.35">Bio-absorbable Antibiotic Beads for Vascular Graft Infection Management</h3>
+<p style="margin: 0; font-size: 15px; color: #9AA8BF">Khawar M., <strong style="color: #E6EDF7">Abbas M. T.</strong>, Ashfaq A.</p>
+<p style="margin: 0; font-family: 'JetBrains Mono', monospace; font-size: 13px; color: #67E8F9">MDPI Proceedings · 4th Int’l Electronic Conference on Antibiotics · 2025</p>
+</article>
+</div>
+
+<div style="display: flex; flex-wrap: wrap; gap: 18px; padding-top: 12px">
+<div class="hv hv-violet" style="flex: 1 1 340px; min-width: 0; background: #0F1626; border: 1px solid #1C2740; border-radius: 18px; padding: 28px; display: flex; flex-direction: column; gap: 14px">
+<h3 style="margin: 0; font-family: 'Space Grotesk', sans-serif; font-weight: 600; font-size: 20px">Honours &amp; Awards</h3>
+<ul style="margin: 0; padding: 0; list-style: none; display: flex; flex-direction: column; gap: 12px; font-size: 15px; line-height: 1.5">
+<li style="display: flex; gap: 12px"><span style="font-family: 'JetBrains Mono', monospace; font-size: 13px; color: #22D3EE; min-width: 40px">2024</span><span>2nd Runner-up, Microsoft Imagine Cup Pakistan</span></li>
+<li style="display: flex; gap: 12px"><span style="font-family: 'JetBrains Mono', monospace; font-size: 13px; color: #22D3EE; min-width: 40px">2025</span><span>Overall Excellence Award, Riphah International University</span></li>
+<li style="display: flex; gap: 12px"><span style="font-family: 'JetBrains Mono', monospace; font-size: 13px; color: #22D3EE; min-width: 40px">2025</span><span>General Secretary, Society of Engineering and Sciences</span></li>
+<li style="display: flex; gap: 12px"><span style="font-family: 'JetBrains Mono', monospace; font-size: 13px; color: #22D3EE; min-width: 40px">2025</span><span>Class Representative</span></li>
+<li style="display: flex; gap: 12px"><span style="font-family: 'JetBrains Mono', monospace; font-size: 13px; color: #22D3EE; min-width: 40px">2023</span><span>Talent Scholarship, Riphah International University</span></li>
+</ul>
+</div>
+<div class="hv hv-violet" style="flex: 1 1 340px; min-width: 0; background: #0F1626; border: 1px solid #1C2740; border-radius: 18px; padding: 28px; display: flex; flex-direction: column; gap: 14px">
+<h3 style="margin: 0; font-family: 'Space Grotesk', sans-serif; font-weight: 600; font-size: 20px">On the Conference Stage</h3>
+<ul style="margin: 0; padding: 0; list-style: none; display: flex; flex-direction: column; gap: 12px; font-size: 15px; line-height: 1.5">
+<li style="display: flex; gap: 12px"><span style="font-family: 'JetBrains Mono', monospace; font-size: 13px; color: #22D3EE; min-width: 40px">2025</span><span>Oral: Hyperelastic assessment of corrugated &amp; non-corrugated TPU grafts (ICSEIT 2025)</span></li>
+<li style="display: flex; gap: 12px"><span style="font-family: 'JetBrains Mono', monospace; font-size: 13px; color: #22D3EE; min-width: 40px">2025</span><span>Oral: Orthotic management of Charcot-Marie-Tooth disease (ICSEIT 2025)</span></li>
+<li style="display: flex; gap: 12px"><span style="font-family: 'JetBrains Mono', monospace; font-size: 13px; color: #22D3EE; min-width: 40px">2025</span><span>Talk: From Goo to Glow (The Particle, LUMS)</span></li>
+<li style="display: flex; gap: 12px"><span style="font-family: 'JetBrains Mono', monospace; font-size: 13px; color: #22D3EE; min-width: 40px">2025</span><span>Paper: Lung nodule malignancy (ETECTE 2024, University of Lahore)</span></li>
+<li style="display: flex; gap: 12px"><span style="font-family: 'JetBrains Mono', monospace; font-size: 13px; color: #22D3EE; min-width: 40px">2024</span><span>Posters: UV-Pure Guard (Riphah) · Conductive hydrogels (ICECE 2024, UET)</span></li>
+</ul>
+</div>
+<div class="hv hv-green" style="flex: 1 1 240px; min-width: 0; background: #0F1626; border: 1px solid #1C2740; border-radius: 18px; padding: 28px; display: flex; flex-direction: column; gap: 14px">
+<h3 style="margin: 0; font-family: 'Space Grotesk', sans-serif; font-weight: 600; font-size: 20px">Languages</h3>
+<div style="display: flex; flex-direction: column; gap: 4px"><span style="font-size: 16px; font-weight: 600">Urdu</span><span style="font-size: 14px; color: #9AA8BF">Native</span></div>
+<div style="display: flex; flex-direction: column; gap: 4px"><span style="font-size: 16px; font-weight: 600">English</span><span style="font-size: 14px; color: #9AA8BF">Professional working proficiency</span></div>
+</div>
+</div>
+</div>
+</section>
+
+<!-- GALLERY -->
+<section id="gallery" style="background: #0A101C; border-top: 1px solid #1C2740; border-bottom: 1px solid #1C2740">
+<div style="max-width: 1200px; margin: 0 auto; padding: 104px 24px; display: flex; flex-direction: column; gap: 36px">
+<div style="display: flex; flex-direction: column; gap: 10px">
+<p style="margin: 0; font-family: 'JetBrains Mono', monospace; font-size: 14px; color: #22D3EE">// 07 · VISUAL GALLERY</p>
+<h2 style="margin: 0; font-family: 'Space Grotesk', sans-serif; font-weight: 700; font-size: clamp(32px, 3.8vw, 50px); line-height: 1.08; letter-spacing: -0.02em">From prototype to proof.</h2>
+<p style="margin: 0; font-size: 17px; color: #9AA8BF">The EMG hand exoskeleton, built and put to the test.</p>
+</div>
+<div style="display: flex; flex-wrap: wrap; gap: 18px">
+<div style="flex: 1 1 360px; min-width: 0; display: flex; flex-direction: column; gap: 18px">
+<figure class="hv hv-cyan zoom" style="margin: 0; flex: 1; background: #0F1626; border: 1px solid #1C2740; border-radius: 18px; overflow: hidden; display: flex; flex-direction: column">
+<img src="assets/img/prototype-top.jpg" alt="Top view of the white 3D-printed exoskeleton prototype with linear actuators" style="display: block; width: 100%; aspect-ratio: 16 / 10; object-fit: cover">
+<figcaption style="padding: 16px 20px; display: flex; flex-direction: column; gap: 4px"><span style="font-family: 'Space Grotesk', sans-serif; font-weight: 600; font-size: 16px">Prototype: top view</span><span style="font-size: 14px; color: #9AA8BF">The 3D-printed build, with an actuator driving each finger.</span></figcaption>
+</figure>
+<figure class="hv hv-cyan zoom" style="margin: 0; flex: 1; background: #0F1626; border: 1px solid #1C2740; border-radius: 18px; overflow: hidden; display: flex; flex-direction: column">
+<img src="assets/img/prototype-linkages.jpg" alt="Angled view of the 3D-printed exoskeleton prototype showing the finger linkages" style="display: block; width: 100%; aspect-ratio: 16 / 10; object-fit: cover">
+<figcaption style="padding: 16px 20px; display: flex; flex-direction: column; gap: 4px"><span style="font-family: 'Space Grotesk', sans-serif; font-weight: 600; font-size: 16px">Prototype: finger linkages</span><span style="font-size: 14px; color: #9AA8BF">Printed joints and rings guide each finger through flexion and extension.</span></figcaption>
+</figure>
+</div>
+<figure class="hv hv-cyan zoom" style="flex: 1 1 360px; min-width: 0; margin: 0; background: #0F1626; border: 1px solid #1C2740; border-radius: 18px; overflow: hidden; display: flex; flex-direction: column">
+<img src="assets/img/exoskeleton-testing.jpg" alt="Muhammad Taqi Abbas testing the 3D-printed hand exoskeleton in the lab, with the control electronics on the bench" style="display: block; width: 100%; flex: 1; min-height: 420px; object-fit: cover; object-position: center 35%">
+<figcaption style="padding: 16px 20px; display: flex; flex-direction: column; gap: 4px"><span style="font-family: 'Space Grotesk', sans-serif; font-weight: 600; font-size: 16px">Putting it to the test</span><span style="font-size: 14px; color: #9AA8BF">Testing the exoskeleton in the Biomedical Engineering lab, Riphah International University.</span></figcaption>
+</figure>
+</div>
+</div>
+</section>
+
+<!-- ACKNOWLEDGEMENTS -->
+<section id="acknowledgements" style="background: #070B14">
+<div style="max-width: 1200px; margin: 0 auto; padding: 104px 24px; display: flex; flex-direction: column; gap: 36px">
+<div style="display: flex; flex-direction: column; gap: 10px">
+<p style="margin: 0; font-family: 'JetBrains Mono', monospace; font-size: 14px; color: #22D3EE">// 08 · ACKNOWLEDGEMENTS</p>
+<h2 style="margin: 0; font-family: 'Space Grotesk', sans-serif; font-weight: 700; font-size: clamp(32px, 3.8vw, 50px); line-height: 1.08; letter-spacing: -0.02em">No great work is built alone.</h2>
+<p style="margin: 0; max-width: 780px; font-size: 17px; line-height: 1.7; color: #9AA8BF">All praise is due to Allah the Almighty, who carried me through every difficulty. I am deeply grateful to the people whose wisdom, patience and partnership shaped this journey.</p>
+</div>
+<div style="display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: 16px">
+<div class="hv hv-green" style="background: #0F1626; border: 1px solid #1C2740; border-radius: 16px; padding: 24px; display: flex; flex-direction: column; gap: 8px"><span style="font-family: 'JetBrains Mono', monospace; font-size: 12px; color: #34D399">PROJECT ADVISOR</span><span style="font-family: 'Space Grotesk', sans-serif; font-weight: 600; font-size: 18px">Engr. Zainab Munir</span><span style="font-size: 14px; line-height: 1.6; color: #9AA8BF">Lecturer, Biomedical Engineering. Her technical guidance and mentorship shaped the exoskeleton from first idea to final prototype.</span></div>
+<div class="hv hv-cyan" style="background: #0F1626; border: 1px solid #1C2740; border-radius: 16px; padding: 24px; display: flex; flex-direction: column; gap: 8px"><span style="font-family: 'JetBrains Mono', monospace; font-size: 12px; color: #22D3EE">HEAD OF DEPARTMENT</span><span style="font-family: 'Space Grotesk', sans-serif; font-weight: 600; font-size: 18px">Dr. Tausif Zahid</span><span style="font-size: 14px; line-height: 1.6; color: #9AA8BF">Associate Professor and HOD. His leadership built the research-driven environment that made this work possible.</span></div>
+<div class="hv hv-amber" style="background: #0F1626; border: 1px solid #1C2740; border-radius: 16px; padding: 24px; display: flex; flex-direction: column; gap: 8px"><span style="font-family: 'JetBrains Mono', monospace; font-size: 12px; color: #FBBF24">ACADEMIC MENTOR</span><span style="font-family: 'Space Grotesk', sans-serif; font-weight: 600; font-size: 18px">Dr. Jawad Hussain</span><span style="font-size: 14px; line-height: 1.6; color: #9AA8BF">Associate Professor. His guidance sharpened my research ability and technical judgement.</span></div>
+<div class="hv hv-violet" style="background: #0F1626; border: 1px solid #1C2740; border-radius: 16px; padding: 24px; display: flex; flex-direction: column; gap: 8px"><span style="font-family: 'JetBrains Mono', monospace; font-size: 12px; color: #A78BFA">EXOSKELETON TEAM</span><span style="font-family: 'Space Grotesk', sans-serif; font-weight: 600; font-size: 18px">Mishaal Khawar · Komal Tariq · Faizan Ahmed</span><span style="font-size: 14px; line-height: 1.6; color: #9AA8BF">The teammates who designed, built and tested the exoskeleton alongside me.</span></div>
+<div class="hv hv-pink" style="background: #0F1626; border: 1px solid #1C2740; border-radius: 16px; padding: 24px; display: flex; flex-direction: column; gap: 8px"><span style="font-family: 'JetBrains Mono', monospace; font-size: 12px; color: #F472B6">CO-AUTHORS</span><span style="font-family: 'Space Grotesk', sans-serif; font-weight: 600; font-size: 18px">Research collaborators</span><span style="font-size: 14px; line-height: 1.6; color: #9AA8BF">Mishaal Khawar, Faizan Ahmad, Komal Tariq, Saba Anwer, Zainab Munir, Hadiya Malik and Alizay Ashfaq.</span></div>
+<div class="hv hv-cyan" style="background: #0F1626; border: 1px solid #1C2740; border-radius: 16px; padding: 24px; display: flex; flex-direction: column; gap: 8px"><span style="font-family: 'JetBrains Mono', monospace; font-size: 12px; color: #67E8F9">INSTITUTION &amp; FAMILY</span><span style="font-family: 'Space Grotesk', sans-serif; font-weight: 600; font-size: 18px">Riphah International University</span><span style="font-size: 14px; line-height: 1.6; color: #9AA8BF">Its management, faculty and staff, and my family and friends, whose faith in me never wavered.</span></div>
+</div>
+<p style="margin: 0; font-size: 13px; color: #7F8DA6">Project photos, CAD renders and figures are from the final-year project report <em>A Real-Time EMG-Based Assistive Hand Exoskeleton for Cervical Spinal Cord Injury Patients</em> (Khawar, Tariq, Ahmed &amp; Abbas, Riphah International University).</p>
+</div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="grid-dark" style="background-color: #0A101C; border-top: 1px solid #1C2740">
+<div style="max-width: 1200px; margin: 0 auto; padding: 104px 24px; display: flex; flex-wrap: wrap; gap: 48px">
+<div style="flex: 1 1 380px; min-width: 0; display: flex; flex-direction: column; gap: 20px">
+<p style="margin: 0; font-family: 'JetBrains Mono', monospace; font-size: 14px; color: #22D3EE">// 09 · CONTACT</p>
+<h2 style="margin: 0; font-family: 'Space Grotesk', sans-serif; font-weight: 700; font-size: clamp(32px, 3.8vw, 50px); line-height: 1.08; letter-spacing: -0.02em">Initiate Connection</h2>
+<p style="margin: 0; font-size: 17px; line-height: 1.7; color: #9AA8BF">Have a research question, a collaboration in mind or an opportunity to share? I’d be delighted to hear from you. References available on request.</p>
+<a href="mailto:muhammadtaqi811@gmail.com" class="row-link" style="display: flex; align-items: center; gap: 14px; min-height: 56px; padding: 0 18px; border-radius: 14px; background: #0F1626; border: 1px solid #1C2740; color: #E6EDF7; text-decoration: none">
+<svg aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#67E8F9" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2"></rect><path d="M3 7l9 6 9-6"></path></svg>
+<span style="font-size: 16px">muhammadtaqi811@gmail.com</span>
+</a>
+<a href="https://www.linkedin.com/in/muhammad-taqi-5221182b3" class="row-link" style="display: flex; align-items: center; gap: 14px; min-height: 56px; padding: 0 18px; border-radius: 14px; background: #0F1626; border: 1px solid #1C2740; color: #E6EDF7; text-decoration: none">
+<svg aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#67E8F9" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="7" width="18" height="13" rx="2"></rect><path d="M8 7V5a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"></path></svg>
+<span style="font-size: 16px">LinkedIn · muhammad-taqi</span>
+</a>
+<div style="display: flex; align-items: center; gap: 14px; min-height: 56px; padding: 0 18px; border-radius: 14px; background: #0F1626; border: 1px solid #1C2740">
+<svg aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#67E8F9" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s-7-6.2-7-11a7 7 0 0 1 14 0c0 4.8-7 11-7 11z"></path><circle cx="12" cy="10" r="2.5"></circle></svg>
+<span style="font-size: 16px">Lahore, Pakistan</span>
+</div>
+</div>
+
+<div class="hv hv-cyan" style="flex: 1 1 440px; min-width: 0; background: #0F1626; border: 1px solid #1C2740; border-radius: 20px; padding: 32px; display: flex; flex-direction: column; gap: 18px">
+<div style="display: flex; flex-direction: column; gap: 8px">
+<label for="cf-name" style="font-size: 14px; font-weight: 500; color: #C3CEDF">Name</label>
+<input id="cf-name" type="text" placeholder="Your name" style="box-sizing: border-box; width: 100%; min-height: 50px; padding: 0 16px; border-radius: 12px; border: 1px solid #2A3A57; background: #0B1220; color: #E6EDF7; font-size: 16px">
+</div>
+<div style="display: flex; flex-direction: column; gap: 8px">
+<label for="cf-email" style="font-size: 14px; font-weight: 500; color: #C3CEDF">Email</label>
+<input id="cf-email" type="email" placeholder="you@example.com" style="box-sizing: border-box; width: 100%; min-height: 50px; padding: 0 16px; border-radius: 12px; border: 1px solid #2A3A57; background: #0B1220; color: #E6EDF7; font-size: 16px">
+</div>
+<div style="display: flex; flex-direction: column; gap: 8px">
+<label for="cf-message" style="font-size: 14px; font-weight: 500; color: #C3CEDF">Message</label>
+<textarea id="cf-message" rows="5" placeholder="How can I help?" style="box-sizing: border-box; width: 100%; padding: 14px 16px; border-radius: 12px; border: 1px solid #2A3A57; background: #0B1220; color: #E6EDF7; font-size: 16px; resize: vertical"></textarea>
+</div>
+<a href="mailto:muhammadtaqi811@gmail.com" id="cf-send" class="btn-primary" style="display: inline-flex; align-items: center; justify-content: center; gap: 10px; min-height: 52px; border-radius: 12px; background: #22D3EE; color: #04121A; text-decoration: none; font-weight: 600; font-size: 16px">Send Message
+<svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 2L11 13"></path><path d="M22 2l-7 20-4-9-9-4z"></path></svg>
+</a>
+<p style="margin: 0; font-size: 13px; color: #7F8DA6">Opens your email app with the message ready to send.</p>
+</div>
+</div>
+</section>
+
+<!-- FOOTER -->
+<footer style="background: #05080F; border-top: 1px solid #1C2740">
+<div style="max-width: 1200px; margin: 0 auto; padding: 32px 24px; display: flex; flex-wrap: wrap; justify-content: space-between; gap: 10px 24px; font-size: 14px; color: #7F8DA6">
+<span>Engineering intelligence in the service of human health.</span>
+<span>© 2026 Muhammad Taqi Abbas</span>
+</div>
+</footer>
+
+</div>
+<script>
+(function () {
+  var modes = [
+    { key: 'ecg', name: 'ECG', color: '#34D399', desc: 'Electrocardiogram: the electrical rhythm of the heart.' },
+    { key: 'emg', name: 'EMG', color: '#22D3EE', desc: 'Electromyogram: bursts of muscle activation.' },
+    { key: 'eeg', name: 'EEG', color: '#A78BFA', desc: 'Electroencephalogram: the rhythmic electrical activity of the brain.' }
+  ];
+  var i = 0;
+  var sim = document.getElementById('sim');
+  sim.addEventListener('click', function () {
+    i = (i + 1) % modes.length;
+    var m = modes[i];
+    document.querySelectorAll('svg[data-mode]').forEach(function (s) { s.hidden = s.getAttribute('data-mode') !== m.key; });
+    var name = document.getElementById('sim-name');
+    name.textContent = m.name; name.style.color = m.color;
+    document.getElementById('sim-desc').textContent = m.desc;
+    var dot = document.getElementById('sim-dot');
+    dot.style.background = m.color; dot.style.boxShadow = '0 0 10px ' + m.color;
+    sim.setAttribute('aria-label', 'Bio-signal simulator, showing ' + m.name + '. Click to switch signal.');
+  });
+  document.getElementById('cf-send').addEventListener('click', function (e) {
+    e.preventDefault();
+    var n = document.getElementById('cf-name').value.trim();
+    var em = document.getElementById('cf-email').value.trim();
+    var msg = document.getElementById('cf-message').value;
+    var subject = 'Portfolio enquiry' + (n ? ' from ' + n : '');
+    var bodyText = msg + (em ? '\n\nReply to: ' + em : '');
+    window.location.href = 'mailto:muhammadtaqi811@gmail.com?subject=' + encodeURIComponent(subject) + '&body=' + encodeURIComponent(bodyText);
+  });
+})();
+</script>
+</body>
+</html>
