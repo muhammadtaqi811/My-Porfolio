@@ -8,7 +8,7 @@ Personal portfolio of **Muhammad Taqi Abbas**, Biomedical Engineer & AI Research
 
 - `index.html` — the whole site (one page, no build step)
 - `assets/img/` — portrait and exoskeleton prototype photos
-- `assets/docs/` — downloadable CV and transcript (personal ID details removed)
+- `assets/docs/` — downloadable CV and transcript (CNIC hidden on the transcript)
 
 ## Editing
 
