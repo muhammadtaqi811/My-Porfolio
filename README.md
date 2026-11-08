@@ -1,6 +1,6 @@
 # Muhammad Taqi Abbas — Portfolio
 
-Personal portfolio of **Muhammad Taqi Abbas**, Biomedical Engineer & AI Researcher (Lahore, Pakistan).
+Personal portfolio of **Muhammad Taqi Abbas**, Biomedical Engineer & Researcher (Lahore, Pakistan).
 
 **Live site:** https://muhammadtaqi811.github.io/My-Porfolio/
 
